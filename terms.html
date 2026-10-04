@@ -22,7 +22,8 @@
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="stylesheet" href="assets/output.css" />
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
 </head>
 
@@ -31,9 +32,8 @@
   <!-- ===================== PRELOADER ===================== -->
   <div id="preloader">
     <div class="flex flex-col items-center gap-6">
-      <div class="w-16 h-16 bg-indigo-600 rounded-2xl flex items-center justify-center shadow-lg" style="animation: pulse-soft 1.4s ease-in-out infinite;">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg>
-      </div>
+      <img src="assets/logo.png" alt="" width="96" height="96" class="w-24 h-24 rounded-full shadow-lg"
+        style="animation: pulse-soft 1.4s ease-in-out infinite;" />
 
       <!-- Pencil Line -->
       <svg class="loader-line" viewBox="0 0 260 60">
@@ -54,11 +54,11 @@
           <span class="flex items-center gap-2">
             <span class="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></span>
             <strong class="text-amber-400">Admissions Open:</strong>
-            <a href="tel:+919876543210" class="hover:text-amber-400 transition-colors">+91 98765 43210</a>
+            <a href="tel:+919129604415" class="hover:text-amber-400 transition-colors">+91 91296 04415</a>
           </span>
           <span class="hidden md:flex items-center gap-2 text-slate-400">
             <span>|</span>
-            <a href="mailto:info@youngmindsacademy.in" class="hover:text-white transition-colors">info@youngmindsacademy.in</a>
+            <a href="mailto:academyyoungminds@gmail.com" class="hover:text-white transition-colors">academyyoungminds@gmail.com</a>
           </span>
         </div>
         <div class="flex items-center gap-4 text-slate-400 text-xs">
@@ -76,36 +76,35 @@
       <div class="flex items-center justify-between h-16 lg:h-18">
         <!-- Logo -->
         <a href="index.html" class="flex items-center gap-2.5">
-          <div class="w-9 h-9 bg-indigo-600 rounded-lg flex items-center justify-center shadow-lg">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg>
-          </div>
+          <img src="assets/logo.png" alt="Young Minds Academy logo" width="44" height="44" class="w-11 h-11 rounded-full shadow-md flex-shrink-0" />
           <div>
             <div class="font-heading font-800 text-lg leading-tight dark:text-white">Young Minds Academy</div>
-            <div class="text-xs text-slate-600 leading-none">Coaching for Classes 6–12</div>
+            <div class="text-xs text-slate-600 leading-none">Coaching for Classes 5–12</div>
           </div>
         </a>
 
         <!-- Desktop Nav -->
-        <div class="hidden lg:flex items-center gap-8">
-          <a href="index.html#home" class="nav-link text-sm">Home</a>
-          <a href="index.html#about" class="nav-link text-sm">About</a>
-          <a href="index.html#courses" class="nav-link text-sm">Courses</a>
-          <a href="index.html#subjects" class="nav-link text-sm">Subjects</a>
-          <a href="admissions.html" class="nav-link text-sm">Admissions</a>
-          <a href="blog.html" class="nav-link text-sm">Blog</a>
-          <a href="index.html#contact" class="nav-link text-sm">Contact</a>
+        <div class="hidden xl:flex items-center gap-6 2xl:gap-8">
+          <a href="index.html#home" class="nav-link text-sm whitespace-nowrap">Home</a>
+          <a href="index.html#about" class="nav-link text-sm whitespace-nowrap">About</a>
+          <a href="index.html#courses" class="nav-link text-sm whitespace-nowrap">Courses</a>
+          <a href="gap-radar.html" class="nav-link text-sm whitespace-nowrap">Gap Radar<span class="nav-badge">FREE</span></a>
+          <a href="admissions.html" class="nav-link text-sm whitespace-nowrap">Admissions</a>
+          <a href="exam-vault.html" class="nav-link text-sm whitespace-nowrap">Exam Vault</a>
+          <a href="blog.html" class="nav-link text-sm whitespace-nowrap">Blog</a>
+          <a href="index.html#contact" class="nav-link text-sm whitespace-nowrap">Contact</a>
         </div>
 
         <!-- Right Actions -->
         <div class="flex items-center gap-3">
-          <div class="hidden lg:block">
+          <div class="hidden xl:block">
             <a href="index.html#demo" class="btn-primary text-sm py-2.5 px-5">
               <i data-lucide="calendar-check" class="w-4 h-4"></i>
               Book Free Demo
             </a>
           </div>
           <!-- Mobile Menu Toggle -->
-          <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-600 hover:text-white" aria-label="Open menu">
+          <button id="mobile-menu-btn" class="xl:hidden p-2 text-slate-600 hover:text-white" aria-label="Open menu">
             <i data-lucide="menu" class="w-6 h-6" id="menu-open"></i>
             <i data-lucide="x" class="w-6 h-6 hidden" id="menu-close"></i>
           </button>
@@ -114,13 +113,14 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-slate-900 border-t border-white/10">
+    <div id="mobile-menu" class="hidden xl:hidden bg-slate-900 border-t border-white/10">
       <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
         <a href="index.html#home" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Home</a>
         <a href="index.html#about" class="nav-link text-slate-200 py-2.5 text-sm font-medium">About</a>
         <a href="index.html#courses" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Courses</a>
-        <a href="index.html#subjects" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Subjects</a>
+        <a href="gap-radar.html" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Gap Radar<span class="nav-badge">FREE</span></a>
         <a href="admissions.html" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Admissions</a>
+        <a href="exam-vault.html" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Exam Vault</a>
         <a href="blog.html" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Blog</a>
         <a href="index.html#contact" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Contact</a>
         <a href="index.html#demo" class="btn-primary mt-3 w-full justify-center">Book Free Demo Class</a>
@@ -186,7 +186,7 @@
 
         <h2 class="font-heading font-bold text-xl text-slate-800 dark:text-white mt-8 mb-3">11. Contact Information</h2>
         <p>For any questions, please contact us:</p>
-        <p><strong>Young Minds Academy</strong><br />2nd Floor, Example Plaza, Main Road, Your City, State – 000000<br />Phone: <a href="tel:+919876543210" class="text-indigo-600">+91 98765 43210</a><br />Email: <a href="mailto:info@youngmindsacademy.in" class="text-indigo-600">info@youngmindsacademy.in</a></p>
+        <p><strong>Young Minds Academy</strong><br />10A/8, Tashkand Marg, near Patrika Chauraha, Opp. Saket Colony, Prayagraj – 211001<br />Phone: <a href="tel:+919129604415" class="text-indigo-600">+91 91296 04415</a><br />Email: <a href="mailto:academyyoungminds@gmail.com" class="text-indigo-600">academyyoungminds@gmail.com</a></p>
       </div>
     </div>
   </section>
@@ -207,11 +207,11 @@
           </div>
         </div>
         <div class="flex flex-wrap gap-3">
-          <a href="tel:+919876543210"
+          <a href="tel:+919129604415"
             class="bg-white text-indigo-700 font-heading font-bold px-6 py-2.5 rounded-lg hover:bg-indigo-50 transition-all text-sm flex items-center gap-2 shadow-lg">
-            <i data-lucide="phone" class="w-4 h-4"></i> +91 98765 43210
+            <i data-lucide="phone" class="w-4 h-4"></i> +91 91296 04415
           </a>
-          <a href="https://wa.me/919876543210" target="_blank" rel="noopener"
+          <a href="https://wa.me/919129604415" target="_blank" rel="noopener"
             class="bg-white/15 border border-white/30 text-white font-heading font-semibold px-6 py-2.5 rounded-lg hover:bg-white/25 transition-all text-sm flex items-center gap-2">
             <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Us
           </a>
@@ -244,18 +244,15 @@
         <!-- Brand Block -->
         <div>
           <div class="flex items-center gap-3 mb-5">
-            <div class="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-900/50">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg>
-            </div>
+            <img src="assets/logo.png" alt="Young Minds Academy logo" width="56" height="56" class="w-14 h-14 rounded-full shadow-lg flex-shrink-0" />
             <div>
               <div class="font-heading font-extrabold text-2xl text-white tracking-tight">Young Minds Academy</div>
-              <div class="text-xs text-amber-400 font-semibold uppercase tracking-widest">Learn · Grow · Achieve</div>
+              <div class="text-xs text-amber-400 font-semibold uppercase tracking-widest">Guiding Bright Brains</div>
             </div>
           </div>
           <p class="text-slate-400 text-sm leading-relaxed mb-6 max-w-md">
-            Young Minds Academy is a coaching institute for students of Classes 6–12, helping them master school subjects and
-            prepare for board exams, JEE, NEET and Olympiads through concept-first teaching, small batches and regular
-            practice.
+            Young Minds Academy has been guiding bright brains since 2016 — coaching students of Classes 5–12 for school and board
+            exams, JEE, NEET, CUET, CLAT, IPMAT and CAT through concept-first teaching and regular practice.
           </p>
 
           <!-- Boards Row -->
@@ -289,7 +286,7 @@
           <!-- Social Icons -->
           <div class="flex items-center gap-3">
             <span class="text-slate-500 text-xs mr-1">Follow Us:</span>
-            <a href="#"
+            <a href="https://www.facebook.com/youngsmindsacademy/" target="_blank" rel="noopener"
               class="w-9 h-9 bg-[#1877F2] rounded-full flex items-center justify-center hover:opacity-90 hover:scale-110 transition-all"
               title="Facebook">
               <svg width="15" height="15" fill="white" viewBox="0 0 24 24">
@@ -297,7 +294,7 @@
                   d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
               </svg>
             </a>
-            <a href="#"
+            <a href="https://www.instagram.com/youngmindsacademy.in/" target="_blank" rel="noopener"
               class="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-90 hover:scale-110 transition-all"
               style="background: linear-gradient(45deg, #f09433,#e6683c,#dc2743,#cc2366,#bc1888)" title="Instagram">
               <svg width="15" height="15" fill="white" viewBox="0 0 24 24">
@@ -305,15 +302,7 @@
                   d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
               </svg>
             </a>
-            <a href="#"
-              class="w-9 h-9 bg-[#FF0000] rounded-full flex items-center justify-center hover:opacity-90 hover:scale-110 transition-all"
-              title="YouTube">
-              <svg width="15" height="15" fill="white" viewBox="0 0 24 24">
-                <path
-                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-              </svg>
-            </a>
-            <a href="https://wa.me/919876543210" target="_blank" rel="noopener"
+            <a href="https://wa.me/919129604415" target="_blank" rel="noopener"
               class="w-9 h-9 bg-[#25D366] rounded-full flex items-center justify-center hover:opacity-90 hover:scale-110 transition-all"
               title="WhatsApp">
               <i data-lucide="message-circle" class="w-4 h-4 text-white"></i>
@@ -359,30 +348,34 @@
             Our Courses
           </h4>
           <ul class="space-y-3">
-            <li><a href="foundation.html"
+            <li><a href="pre-nurture.html"
                 class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
                   data-lucide="chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Foundation (Class 6–8)</a></li>
-            <li><a href="board-prep.html"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Pre-Nurture (Class 5–8)</a></li>
+            <li><a href="pre-foundation.html"
                 class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
                   data-lucide="chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Class 9–10 Boards</a></li>
-            <li><a href="senior-secondary.html"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Pre-Foundation (Class 9–10)</a></li>
+            <li><a href="foundation-pcb.html"
                 class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
                   data-lucide="chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Class 11–12 Science</a></li>
-            <li><a href="jee.html"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Foundation 11–12 (PCB)</a></li>
+            <li><a href="foundation-pcmb.html"
                 class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
                   data-lucide="chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>JEE Main &amp; Advanced</a></li>
-            <li><a href="neet.html"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Foundation 11–12 (PCMB)</a></li>
+            <li><a href="foundation-commerce.html"
                 class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
                   data-lucide="chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>NEET Preparation</a></li>
-            <li><a href="olympiad.html"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Foundation 11–12 (Commerce)</a></li>
+            <li><a href="cuet.html"
                 class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
                   data-lucide="chevron-right"
-                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Olympiads &amp; Competitive Exams</a></li>
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>CUET Batches</a></li>
+            <li><a href="target-foundation.html"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Target &amp; Foundation (CLAT / IPMAT / CAT)</a></li>
           </ul>
         </div>
 
@@ -393,10 +386,18 @@
             Students &amp; Parents
           </h4>
           <ul class="space-y-3">
+            <li><a href="gap-radar.html"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Free Foundation Gap Radar™ Scan</a></li>
             <li><a href="index.html#demo"
                 class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
                   data-lucide="chevron-right"
                   class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Book Free Demo</a></li>
+            <li><a href="exam-vault.html"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Exam Vault (Free Papers)</a></li>
             <li><a href="admissions.html"
                 class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
                   data-lucide="chevron-right"
@@ -431,6 +432,10 @@
                 class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
                   data-lucide="chevron-right"
                   class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>About Us</a></li>
+            <li><a href="index.html#smart-learning"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Smart Learning Support</a></li>
             <li><a href="index.html#subjects"
                 class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
                   data-lucide="chevron-right"
@@ -497,7 +502,7 @@
               </div>
               <div>
                 <div class="text-slate-300 text-xs font-semibold mb-0.5">Our Centre</div>
-                <div class="text-slate-500 text-xs leading-relaxed">2nd Floor, Example Plaza, Main Road,<br />Your City, State – 000000</div>
+                <div class="text-slate-500 text-xs leading-relaxed">10A/8, Tashkand Marg, near Patrika Chauraha,<br />Opp. Saket Colony, Prayagraj – 211001</div>
               </div>
             </li>
             <li class="flex items-start gap-3">
@@ -506,7 +511,7 @@
               </div>
               <div>
                 <div class="text-slate-300 text-xs font-semibold mb-0.5">Phone / WhatsApp</div>
-                <a href="tel:+919876543210" class="text-slate-500 text-xs hover:text-indigo-300 transition-colors">+91 98765 43210</a>
+                <a href="tel:+919129604415" class="text-slate-500 text-xs hover:text-indigo-300 transition-colors">+91 91296 04415</a>
               </div>
             </li>
             <li class="flex items-start gap-3">
@@ -515,10 +520,8 @@
               </div>
               <div class="min-w-0">
                 <div class="text-slate-300 text-xs font-semibold mb-0.5">Email</div>
-                <a href="mailto:info@youngmindsacademy.in"
-                  class="text-slate-500 text-xs hover:text-indigo-300 transition-colors break-all">info@youngmindsacademy.in</a><br />
-                <a href="mailto:admissions@youngmindsacademy.in"
-                  class="text-slate-500 text-xs hover:text-indigo-300 transition-colors break-all">admissions@youngmindsacademy.in</a>
+                <a href="mailto:academyyoungminds@gmail.com"
+                  class="text-slate-500 text-xs hover:text-indigo-300 transition-colors break-all">academyyoungminds@gmail.com</a>
               </div>
             </li>
           </ul>
@@ -535,38 +538,38 @@
         </div>
         <div class="grid grid-cols-3 sm:grid-cols-6 gap-2.5">
           <div class="block rounded-xl overflow-hidden aspect-square group relative">
-            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=200&h=200&fit=crop&auto=format"
-              alt="Classroom session" loading="lazy"
+            <img src="assets/img/classroom-1-thumb.jpg"
+              alt="Students writing a test at Young Minds Academy" loading="lazy"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
             <div class="absolute inset-0 bg-indigo-600/0 group-hover:bg-indigo-600/30 transition-all duration-300"></div>
           </div>
           <div class="block rounded-xl overflow-hidden aspect-square group relative">
-            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=200&h=200&fit=crop&auto=format"
-              alt="Young learners in class" loading="lazy"
+            <img src="assets/img/classroom-2-thumb.jpg"
+              alt="Weekly test in progress" loading="lazy"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
             <div class="absolute inset-0 bg-indigo-600/0 group-hover:bg-indigo-600/30 transition-all duration-300"></div>
           </div>
           <div class="block rounded-xl overflow-hidden aspect-square group relative">
-            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=200&h=200&fit=crop&auto=format"
-              alt="Lecture hall" loading="lazy"
+            <img src="assets/img/classroom-3-thumb.jpg"
+              alt="Students in the classroom" loading="lazy"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
             <div class="absolute inset-0 bg-indigo-600/0 group-hover:bg-indigo-600/30 transition-all duration-300"></div>
           </div>
           <div class="block rounded-xl overflow-hidden aspect-square group relative">
-            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=200&h=200&fit=crop&auto=format"
-              alt="Group study" loading="lazy"
+            <img src="assets/img/results-best-thumb.jpg"
+              alt="Best results since 2016 poster" loading="lazy"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
             <div class="absolute inset-0 bg-indigo-600/0 group-hover:bg-indigo-600/30 transition-all duration-300"></div>
           </div>
           <div class="block rounded-xl overflow-hidden aspect-square group relative">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=200&h=200&fit=crop&auto=format"
-              alt="Students collaborating" loading="lazy"
+            <img src="assets/img/results-toppers-thumb.jpg"
+              alt="Our toppers" loading="lazy"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
             <div class="absolute inset-0 bg-indigo-600/0 group-hover:bg-indigo-600/30 transition-all duration-300"></div>
           </div>
           <div class="block rounded-xl overflow-hidden aspect-square group relative">
-            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=200&h=200&fit=crop&auto=format"
-              alt="Our classroom" loading="lazy"
+            <img src="assets/img/admissions-poster-thumb.jpg"
+              alt="Admissions open poster" loading="lazy"
               class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
             <div class="absolute inset-0 bg-indigo-600/0 group-hover:bg-indigo-600/30 transition-all duration-300"></div>
           </div>
@@ -701,9 +704,9 @@
 
   <!-- ===================== MOBILE STICKY CTA ===================== -->
   <div class="mobile-cta dark:bg-slate-900 dark:border-t dark:border-slate-700">
-    <a href="index.html#demo" class="btn-primary w-full justify-center py-3.5 text-base">
-      <i data-lucide="calendar-check" class="w-5 h-5"></i>
-      Book a Free Demo Class
+    <a href="gap-radar.html#book" class="btn-amber w-full justify-center py-3.5 text-base">
+      <i data-lucide="radar" class="w-5 h-5"></i>
+      Book a Free 15-Min Gap Radar Scan
     </a>
   </div>
 

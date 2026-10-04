@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Exam Vault Admin | Young Minds Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="../../assets/style.css" />
+  <link rel="stylesheet" href="../../assets/output.css" />
+  <link rel="icon" href="../../assets/favicon.png" type="image/png">
+</head>
+
+<body class="bg-slate-50 min-h-screen">
+
+  <!-- Top bar -->
+  <header class="bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <a href="../../index.html" class="flex items-center gap-3 min-w-0">
+        <img src="../../assets/logo.png" alt="Young Minds Academy logo" width="40" height="40" class="w-10 h-10 rounded-full flex-shrink-0" />
+        <div class="min-w-0">
+          <div class="font-heading font-bold leading-tight truncate">Exam Vault Admin</div>
+          <div class="text-xs text-slate-400 truncate">Young Minds Academy</div>
+        </div>
+      </a>
+      <div class="flex items-center gap-3 text-sm">
+        <a href="../../exam-vault.html" target="_blank" class="hidden sm:inline-flex items-center gap-1.5 text-slate-300 hover:text-white">
+          <i data-lucide="external-link" class="w-4 h-4"></i> View vault</a>
+        <span id="admin-user" class="hidden md:inline text-slate-400"></span>
+        <div id="signout-wrap" class="hidden">
+          <button type="button" id="signout" class="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 rounded-lg px-3 py-1.5">
+            <i data-lucide="log-out" class="w-4 h-4"></i> Sign out</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+    <!-- Preview-mode notice -->
+    <div id="preview-notice" class="hidden mb-6">
+      <div class="bg-amber-50 border border-amber-200 text-amber-900 rounded-xl px-4 py-3 text-sm flex items-start gap-3">
+        <i data-lucide="eye" class="w-5 h-5 flex-shrink-0 mt-0.5"></i>
+        <span><strong>Preview mode:</strong> you're looking at sample data. Changes are kept only until you reload, and files aren't uploaded.</span>
+      </div>
+    </div>
+
+    <!-- Setup (Supabase not configured) -->
+    <section id="view-setup" class="hidden max-w-2xl mx-auto bg-white rounded-2xl border border-gray-100 shadow-soft p-8">
+      <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-4">
+        <i data-lucide="database" class="w-6 h-6 text-indigo-600"></i>
+      </div>
+      <h1 class="font-heading font-bold text-2xl text-slate-900 mb-2">Connect Supabase to start uploading</h1>
+      <p class="text-slate-600 text-sm mb-6">The admin dashboard stores papers and PDFs in your Supabase project. One-time setup:</p>
+      <ol class="list-decimal pl-5 space-y-3 text-sm text-slate-700 mb-8">
+        <li>Create a free project at <a href="https://supabase.com" target="_blank" rel="noopener" class="text-indigo-600 underline">supabase.com</a>.</li>
+        <li>In <strong>SQL Editor</strong>, run the script in <code class="bg-slate-100 px-1 rounded">supabase/schema.sql</code>. It creates the tables, the <code class="bg-slate-100 px-1 rounded">papers</code> storage bucket and the admin-only access rules.</li>
+        <li>In <strong>Authentication → Users</strong>, add a user for yourself, then run the "make yourself an admin" query at the bottom of the script.</li>
+        <li>Copy the <strong>Project URL</strong> and <strong>anon public key</strong> from <strong>Project Settings → API</strong> into <code class="bg-slate-100 px-1 rounded">assets/vault-config.js</code>.</li>
+      </ol>
+      <button type="button" id="start-preview" class="btn-outline-dark text-sm py-2.5 px-5">
+        <i data-lucide="eye" class="w-4 h-4"></i> Preview the dashboard with sample data</button>
+    </section>
+
+    <!-- Login -->
+    <section id="view-login" class="hidden max-w-sm mx-auto bg-white rounded-2xl border border-gray-100 shadow-soft p-8">
+      <h1 class="font-heading font-bold text-2xl text-slate-900 mb-1">Admin sign in</h1>
+      <p class="text-sm text-slate-500 mb-6">Only academy admins can manage papers.</p>
+      <form id="login-form" class="space-y-4">
+        <div>
+          <label for="login-email" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+          <input id="login-email" type="email" required autocomplete="username" class="admin-input" />
+        </div>
+        <div>
+          <label for="login-password" class="block text-sm font-medium text-slate-700 mb-1">Password</label>
+          <input id="login-password" type="password" required autocomplete="current-password" class="admin-input" />
+        </div>
+        <p id="login-error" class="hidden text-sm text-rose-600"></p>
+        <button type="submit" class="btn-primary w-full justify-center py-3 text-sm"><i data-lucide="log-in" class="w-4 h-4"></i> Sign in</button>
+      </form>
+    </section>
+
+    <!-- Access denied -->
+    <section id="view-denied" class="hidden max-w-md mx-auto text-center bg-white rounded-2xl border border-gray-100 shadow-soft p-8">
+      <i data-lucide="shield-x" class="w-10 h-10 text-rose-500 mx-auto mb-3"></i>
+      <h1 class="font-heading font-bold text-xl text-slate-900 mb-2">Admins only</h1>
+      <p class="text-sm text-slate-500">This account doesn't have admin access. Ask a super admin to grant you the ADMIN role.</p>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="view-app" class="hidden">
+      <div class="flex flex-wrap items-center justify-between gap-4 mb-6">
+        <div role="tablist" class="flex gap-2" id="admin-tabs">
+          <button type="button" class="vault-tab is-active" data-tab="papers">Papers</button>
+          <button type="button" class="vault-tab" data-tab="form" id="tab-form-btn">Upload paper</button>
+          <button type="button" class="vault-tab" data-tab="leads">WhatsApp leads</button>
+        </div>
+      </div>
+
+      <!-- Papers table -->
+      <div data-panel="papers">
+        <div class="flex flex-wrap items-center gap-3 mb-4">
+          <div class="relative flex-1 min-w-[220px]">
+            <input type="search" id="table-search" placeholder="Search title, subject, year..." class="admin-input pl-10" />
+            <i data-lucide="search" class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400"></i>
+          </div>
+          <select id="table-status" class="admin-input w-auto">
+            <option value="">All statuses</option>
+            <option value="PUBLISHED">Published</option>
+            <option value="SCHEDULED">Scheduled</option>
+            <option value="DRAFT">Draft</option>
+          </select>
+          <button type="button" id="new-paper" class="btn-primary text-sm py-2.5 px-4"><i data-lucide="plus" class="w-4 h-4"></i> New paper</button>
+        </div>
+        <div class="bg-white rounded-2xl border border-gray-100 shadow-soft overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead class="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
+              <tr>
+                <th class="px-4 py-3 font-semibold">Title</th>
+                <th class="px-4 py-3 font-semibold">Board</th>
+                <th class="px-4 py-3 font-semibold">Class</th>
+                <th class="px-4 py-3 font-semibold">Type</th>
+                <th class="px-4 py-3 font-semibold">Year</th>
+                <th class="px-4 py-3 font-semibold text-right">Downloads</th>
+                <th class="px-4 py-3 font-semibold">Status</th>
+                <th class="px-4 py-3 font-semibold">Uploaded</th>
+                <th class="px-4 py-3 font-semibold text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="papers-body" class="divide-y divide-gray-100"></tbody>
+          </table>
+        </div>
+        <div class="flex items-center justify-between mt-4 text-sm text-slate-500">
+          <span id="table-info"></span>
+          <div class="flex gap-2">
+            <button type="button" id="page-prev" class="admin-btn-sm">Previous</button>
+            <button type="button" id="page-next" class="admin-btn-sm">Next</button>
+          </div>
+        </div>
+        <input type="file" id="replace-input" accept="application/pdf" class="hidden" />
+      </div>
+
+      <!-- Upload / edit form -->
+      <div data-panel="form" class="hidden">
+        <form id="paper-form" class="grid lg:grid-cols-[1fr_340px] gap-6" novalidate>
+          <div class="space-y-6">
+            <div class="bg-white rounded-2xl border border-gray-100 shadow-soft p-6">
+              <h2 class="font-heading font-bold text-lg text-slate-900 mb-5" id="form-heading">Document details</h2>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="admin-label" for="f-board">Board *</label>
+                  <select id="f-board" class="admin-input" required></select>
+                </div>
+                <div>
+                  <label class="admin-label" for="f-class">Class *</label>
+                  <select id="f-class" class="admin-input" required></select>
+                </div>
+                <div>
+                  <label class="admin-label" for="f-subject">Subject *</label>
+                  <select id="f-subject" class="admin-input" required></select>
+                  <input id="f-subject-custom" type="text" placeholder="Custom subject name" class="admin-input mt-2 hidden" />
+                </div>
+                <div>
+                  <label class="admin-label" for="f-category">Paper type *</label>
+                  <select id="f-category" class="admin-input" required></select>
+                </div>
+                <div>
+                  <label class="admin-label" for="f-year">Exam year *</label>
+                  <select id="f-year" class="admin-input" required></select>
+                </div>
+                <div>
+                  <label class="admin-label" for="f-region">Region / term</label>
+                  <select id="f-region" class="admin-input"></select>
+                </div>
+                <div class="sm:col-span-2">
+                  <label class="admin-label" for="f-set">Set / series / code</label>
+                  <input id="f-set" type="text" class="admin-input" placeholder="e.g. Set 1 (Code 30/1/1)" />
+                </div>
+                <div class="sm:col-span-2">
+                  <label class="admin-label" for="f-title">Title *</label>
+                  <input id="f-title" type="text" class="admin-input" required maxlength="200" />
+                  <p class="text-xs text-slate-500 mt-1">Suggested: <button type="button" id="use-suggested" class="text-indigo-600 font-medium hover:underline text-left"></button></p>
+                </div>
+                <div class="sm:col-span-2">
+                  <label class="admin-label" for="f-tag-input">Tags / chapters</label>
+                  <div id="tag-box" class="admin-input flex flex-wrap items-center gap-1.5 cursor-text min-h-[46px]">
+                    <input id="f-tag-input" type="text" class="flex-1 min-w-[140px] outline-none text-sm py-1" placeholder="Type a chapter and press Enter" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-gray-100 shadow-soft p-6">
+              <h2 class="font-heading font-bold text-lg text-slate-900 mb-5">Files</h2>
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <span class="admin-label">Question paper PDF *</span>
+                  <label class="drop-zone" data-drop="question">
+                    <input type="file" accept="application/pdf" id="f-question" class="sr-only" />
+                    <i data-lucide="file-up" class="w-7 h-7 text-indigo-500"></i>
+                    <span class="text-sm font-medium text-slate-700" data-file-label>Drop PDF here or click to browse</span>
+                    <span class="text-xs text-slate-400">PDF only · max 25 MB</span>
+                  </label>
+                </div>
+                <div>
+                  <span class="admin-label">Solution / marking scheme PDF</span>
+                  <label class="drop-zone" data-drop="solution">
+                    <input type="file" accept="application/pdf" id="f-solution" class="sr-only" />
+                    <i data-lucide="file-check-2" class="w-7 h-7 text-green-500"></i>
+                    <span class="text-sm font-medium text-slate-700" data-file-label>Optional — drop PDF here</span>
+                    <span class="text-xs text-slate-400">PDF only · max 25 MB</span>
+                  </label>
+                  <div id="remove-solution-wrap" class="hidden mt-2">
+                    <label class="flex items-center gap-2 text-xs text-slate-600"><input type="checkbox" id="f-remove-solution" class="accent-rose-600" /> Remove current solution PDF</label>
+                  </div>
+                </div>
+              </div>
+              <label class="flex items-center gap-2 text-sm text-slate-700 mt-4">
+                <input type="checkbox" id="f-included" class="w-4 h-4 accent-indigo-600" />
+                Solutions / marking scheme are included inside the question PDF
+              </label>
+              <div class="mt-4">
+                <label class="admin-label" for="f-video">Solution video URL</label>
+                <input id="f-video" type="url" class="admin-input" placeholder="https://www.youtube.com/watch?v=..." />
+              </div>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <div class="bg-white rounded-2xl border border-gray-100 shadow-soft p-6 lg:sticky lg:top-6">
+              <h2 class="font-heading font-bold text-lg text-slate-900 mb-5">Publishing</h2>
+              <fieldset class="space-y-2 mb-5">
+                <legend class="admin-label">Status</legend>
+                <label class="flex items-center gap-2 text-sm"><input type="radio" name="status" value="DRAFT" class="accent-indigo-600" checked /> Draft</label>
+                <label class="flex items-center gap-2 text-sm"><input type="radio" name="status" value="PUBLISHED" class="accent-indigo-600" /> Published</label>
+                <label class="flex items-center gap-2 text-sm"><input type="radio" name="status" value="SCHEDULED" class="accent-indigo-600" /> Scheduled</label>
+              </fieldset>
+              <div id="schedule-wrap" class="hidden mb-5">
+                <label class="admin-label" for="f-schedule">Go live at *</label>
+                <input id="f-schedule" type="datetime-local" class="admin-input" />
+                <p class="text-xs text-slate-500 mt-1">Tip: schedule guess papers 48 hours before the exam.</p>
+              </div>
+              <div class="space-y-3 mb-6">
+                <label class="flex items-start gap-2 text-sm"><input type="checkbox" id="f-featured" class="mt-0.5 accent-indigo-600" />
+                  <span><strong>Featured</strong><br /><span class="text-xs text-slate-500">Pinned to the top of the vault</span></span></label>
+                <label class="flex items-start gap-2 text-sm"><input type="checkbox" id="f-recommended" class="mt-0.5 accent-indigo-600" />
+                  <span><strong>Faculty recommended</strong><br /><span class="text-xs text-slate-500">Ranks higher under "Faculty recommended"</span></span></label>
+                <label class="flex items-start gap-2 text-sm"><input type="checkbox" id="f-gated" class="mt-0.5 accent-indigo-600" />
+                  <span><strong>Require WhatsApp to download</strong><br /><span class="text-xs text-slate-500">Preview shows 2 pages; full paper after number is entered</span></span></label>
+              </div>
+              <p id="form-error" class="hidden text-sm text-rose-600 mb-3"></p>
+              <button type="submit" id="form-submit" class="btn-primary w-full justify-center py-3 text-sm">
+                <i data-lucide="upload-cloud" class="w-4 h-4"></i> <span>Save paper</span></button>
+              <button type="button" id="form-cancel" class="w-full text-center text-sm text-slate-500 hover:text-slate-800 mt-3">Cancel</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Leads -->
+      <div data-panel="leads" class="hidden">
+        <div class="flex items-center justify-between mb-4">
+          <p class="text-sm text-slate-500" id="leads-info"></p>
+          <button type="button" id="leads-export" class="btn-outline-dark text-sm py-2 px-4"><i data-lucide="download" class="w-4 h-4"></i> Export CSV</button>
+        </div>
+        <div class="bg-white rounded-2xl border border-gray-100 shadow-soft overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead class="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
+              <tr>
+                <th class="px-4 py-3 font-semibold">Date</th>
+                <th class="px-4 py-3 font-semibold">WhatsApp</th>
+                <th class="px-4 py-3 font-semibold">Student</th>
+                <th class="px-4 py-3 font-semibold">Class</th>
+                <th class="px-4 py-3 font-semibold">Paper</th>
+              </tr>
+            </thead>
+            <tbody id="leads-body" class="divide-y divide-gray-100"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast -->
+  <div id="toast"
+    class="fixed top-20 right-4 bg-green-600 text-white px-5 py-3 rounded-lg shadow-lg font-medium text-sm translate-x-full opacity-0 transition-all duration-300 z-[200] flex items-center gap-2 max-w-[calc(100vw-2rem)]">
+    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0"></i>
+    <span id="toast-msg"></span>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+  <script src="../../assets/vault-config.js"></script>
+  <script src="../../assets/admin-papers.js"></script>
+</body>
+
+</html>

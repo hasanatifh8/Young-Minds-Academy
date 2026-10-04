@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Study Blog | Young Minds Academy</title>
-  <meta name="description" content="Study tips, exam strategies and parenting advice from Young Minds Academy." />
+  <title>Foundation Gap Radar™ – Free 15-Minute Learning Diagnostic | Young Minds Academy</title>
+  <meta name="description" content="A free 15-minute adaptive diagnostic that finds the hidden foundation gaps behind low marks in Maths and Science, Classes 6–12, with a clear report and action plan." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -128,258 +128,484 @@
     </div>
   </nav>
 
-  <!-- ===================== PAGE HERO ===================== -->
-  <section class="relative py-20" style="background: var(--hero-gradient);">
-    <div class="absolute top-20 right-16 w-72 h-72 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-      <span
-        class="inline-flex items-center gap-2 bg-white/10 text-slate-200 text-xs font-semibold px-4 py-2 rounded-full uppercase tracking-wide mb-4"
-        data-aos="fade-up">
-        <i data-lucide="rss" class="w-3.5 h-3.5"></i> Study Blog
-      </span>
-      <h1 class="font-heading font-extrabold text-4xl lg:text-5xl text-white mb-4" data-aos="fade-up"
-        data-aos-delay="100">
-        Study Tips &amp; Exam Guidance
-      </h1>
-      <p class="text-slate-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-        Practical advice on studying smarter, preparing for exams and supporting your child — from the teachers and counsellors at Young Minds Academy.
-      </p>
-      <!-- Search -->
-      <div class="max-w-md mx-auto mt-8" data-aos="fade-up" data-aos-delay="300">
-        <div class="relative">
-          <input type="text" id="blog-search" placeholder="Search articles..." oninput="filterPosts()"
-            class="w-full bg-white/10 border border-white/20 text-white placeholder-slate-400 rounded-full px-5 py-3 pl-12 text-sm focus:outline-none focus:border-indigo-400 transition-all" />
-          <i data-lucide="search" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400"></i>
+  <!-- ===================== RADAR HERO ===================== -->
+  <section class="relative overflow-hidden" style="background: var(--hero-gradient);">
+    <div class="absolute top-10 right-10 w-96 h-96 bg-amber-400/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-20 left-0 w-80 h-80 bg-indigo-500/20 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-24 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="inline-flex items-center gap-2 bg-amber-400 text-slate-900 text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wide mb-5" data-aos="fade-up">
+            <i data-lucide="radar" class="w-4 h-4"></i> Foundation Gap Radar™ · Free 15-Minute Scan
+          </span>
+          <h1 class="font-heading font-extrabold text-4xl sm:text-5xl text-white leading-tight mb-6" data-aos="fade-up" data-aos-delay="100">
+            Stop Stressing Over Low Scores.<br /><span class="text-amber-400">Fix the Hidden Foundation Gaps.</span>
+          </h1>
+          <p class="text-slate-300 text-lg leading-relaxed mb-8 max-w-xl" data-aos="fade-up" data-aos-delay="200">
+            A 15-minute academic diagnostic that works like an MRI scan for learning — pinpointing the exact concepts
+            holding your child back, even from 2–3 grades earlier.
+          </p>
+          <div class="flex flex-wrap gap-4 mb-8" data-aos="fade-up" data-aos-delay="300">
+            <a href="#book" class="btn-primary text-base py-3.5 px-7"><i data-lucide="calendar-check" class="w-5 h-5"></i> Book a Free 15-Minute Scan</a>
+            <a href="#sample-report" class="btn-outline text-base py-3.5 px-7"><i data-lucide="file-bar-chart" class="w-5 h-5"></i> View Sample Report</a>
+          </div>
+          <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-slate-300" data-aos="fade-up" data-aos-delay="400">
+            <span class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 text-amber-400"></i> 15–20 minutes</span>
+            <span class="flex items-center gap-2"><i data-lucide="users" class="w-4 h-4 text-amber-400"></i> Classes 6–12</span>
+            <span class="flex items-center gap-2"><i data-lucide="calculator" class="w-4 h-4 text-amber-400"></i> Maths &amp; Science</span>
+            <span class="flex items-center gap-2"><i data-lucide="gift" class="w-4 h-4 text-amber-400"></i> Completely free</span>
+          </div>
+        </div>
+        <div class="hidden lg:block" data-aos="fade-left" data-aos-delay="200">
+          <div class="bg-white rounded-3xl p-6 shadow-2xl max-w-md ml-auto" style="animation: float 6s ease-in-out infinite;">
+            <div class="flex items-center justify-between mb-4">
+              <div class="font-heading font-bold text-slate-900">Foundation Score</div>
+              <span class="text-xs bg-indigo-100 text-indigo-700 font-semibold px-2.5 py-1 rounded-full">Sample</span>
+            </div>
+            <div class="relative w-44 aspect-[2/1] overflow-hidden mx-auto">
+            <div class="absolute inset-0 rounded-t-full" style="background: conic-gradient(from 270deg at 50% 100%, #f97316 0deg, #f59e0b 86.4deg, #e2e8f0 86.4deg 180deg, transparent 180deg);"></div>
+            <div class="absolute left-[14%] right-[14%] bottom-0 top-[28%] bg-white rounded-t-full flex items-end justify-center pb-1">
+              <span class="font-heading font-extrabold text-3xl text-slate-900">48%</span>
+            </div>
+          </div>
+            <div class="mt-5 space-y-3">
+              <div><div class="flex justify-between text-xs mb-1"><span class="text-slate-600">Fraction reciprocals</span><span class="font-semibold text-rose-600">Gap · Class 7</span></div><div class="h-2 bg-slate-100 rounded-full"><div class="h-2 bg-rose-500 rounded-full" style="width:35%"></div></div></div>
+              <div><div class="flex justify-between text-xs mb-1"><span class="text-slate-600">Ratio &amp; proportion</span><span class="font-semibold text-amber-600">Partial · Class 8</span></div><div class="h-2 bg-slate-100 rounded-full"><div class="h-2 bg-amber-400 rounded-full" style="width:55%"></div></div></div>
+              <div><div class="flex justify-between text-xs mb-1"><span class="text-slate-600">Decimals &amp; percentages</span><span class="font-semibold text-green-600">Mastered</span></div><div class="h-2 bg-slate-100 rounded-full"><div class="h-2 bg-green-500 rounded-full" style="width:90%"></div></div></div>
+            </div>
+            <div class="mt-5 bg-indigo-50 rounded-xl p-3 text-sm text-indigo-900 flex gap-2">
+              <i data-lucide="lightbulb" class="w-4 h-4 mt-0.5 flex-shrink-0"></i>
+              Class 9 equation errors trace back to a Class 7 fraction gap.
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== BLOG CONTENT ===================== -->
-  <section class="section-padding bg-white dark:bg-slate-900">
+  <!-- ===================== THE PROBLEM ===================== -->
+  <section class="section-padding bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-3 gap-10">
-        <!-- Main Content -->
-        <div class="lg:col-span-2 space-y-8" id="post-list">
-          <div class="blog-card dark:bg-slate-800 group" data-aos="fade-up">
-            <div class="blog-img h-64 md:h-80 bg-indigo-600 relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=400&fit=crop&auto=format" alt=""
-                class="absolute inset-0 w-full h-full object-cover" />
-              <div class="absolute top-4 left-4 bg-amber-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Featured</div>
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 text-xs text-slate-400 mb-2">
-                <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> September 24, 2026</span>
-                <span>•</span>
-                <span class="text-indigo-600 font-medium">Study Tips</span>
-              </div>
-              <h2 class="font-heading font-bold text-xl lg:text-2xl text-slate-800 dark:text-white mb-3 leading-tight group-hover:text-indigo-600 transition-colors">10 Smart Study Habits of Board Exam Toppers</h2>
-              <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">Simple, proven routines for revision, note-making and time management that top scorers swear by. Small daily habits that add up to big results.</p>
-              <a href="blog-detail.html" class="inline-flex items-center gap-1.5 text-indigo-600 text-sm font-semibold hover:gap-2 transition-all">
-                Read Article <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
-          </div>
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="alert-triangle" class="w-3.5 h-3.5"></i>
+          The Problem
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Why Traditional Tests Fail Students &amp; Parents</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">When a Class 9 or 10 student scores 45%, the usual advice is “study harder, solve more sample papers, take more tuition.” Rote practice doesn't fix invisible gaps.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="card-medical" data-aos="fade-up">
+          <div class="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center mb-4"><i data-lucide="eye-off" class="w-6 h-6 text-rose-600"></i></div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 mb-2">Raw scores hide the cause</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">A mark of 14/25 shows that marks were lost — but says nothing about <em>why</em>.</p>
+        </div>
+        <div class="card-medical" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4"><i data-lucide="layers" class="w-6 h-6 text-amber-600"></i></div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 mb-2">The hidden bottleneck</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Struggles with advanced topics like quadratic equations or kinematics very often come from unresolved Class 6–8 basics — negative-sign transposition, fraction reciprocals or ratios.</p>
+        </div>
+        <div class="card-medical" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-4"><i data-lucide="frown" class="w-6 h-6 text-indigo-600"></i></div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 mb-2">The anxiety loop</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Students decide they are “bad at maths or science,” leading to exam anxiety, frustration and falling confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="blog-card dark:bg-slate-800 group flex flex-col md:flex-row" data-aos="fade-up">
-            <div class="blog-img h-48 md:h-auto md:w-2/5 flex-shrink-0 bg-indigo-600 relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1453733190371-0a9bedd82893?w=400&h=300&fit=crop&auto=format" alt="" loading="lazy"
-                class="absolute inset-0 w-full h-full object-cover" />
-            </div>
-            <div class="p-5 flex flex-col justify-center">
-              <div class="flex items-center gap-3 text-xs text-slate-400 mb-2">
-                <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> September 12, 2026</span>
-                <span>•</span>
-                <span class="text-amber-600 font-medium">JEE</span>
-              </div>
-              <h2 class="font-heading font-bold text-lg text-slate-800 dark:text-white mb-2 leading-tight group-hover:text-indigo-600 transition-colors">How to Start JEE Preparation in Class 9 and 10</h2>
-              <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-3">Why an early start matters, what to focus on first and how to balance school studies with competitive-exam preparation.</p>
-              <a href="blog-detail.html" class="inline-flex items-center gap-1.5 text-indigo-600 text-sm font-semibold hover:gap-2 transition-all">
-                Read Article <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
-          </div>
+  <!-- ===================== COMPARISON ===================== -->
+  <section class="section-padding bg-slate-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="radar" class="w-3.5 h-3.5"></i>
+          The Solution
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Meet the Foundation Gap Radar™</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">It breaks every topic into small concepts and traces each error back to where it started.</p>
+      </div>
+      <div class="bg-white rounded-2xl border border-gray-100 shadow-soft overflow-hidden" data-aos="fade-up">
+        <table class="w-full text-sm">
+          <thead>
+            <tr>
+              <th class="px-5 py-4 text-left font-heading font-semibold text-slate-500 w-1/2">Traditional Testing</th>
+              <th class="px-5 py-4 text-left font-heading font-semibold text-white bg-indigo-600 w-1/2">Foundation Gap Radar™</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t border-gray-100">
+              <td class="px-5 py-4 text-slate-500"><span class="flex items-start gap-2"><i data-lucide="x-circle" class="w-5 h-5 text-rose-400 flex-shrink-0"></i>Scores only the final answer</span></td>
+              <td class="px-5 py-4 text-slate-800 font-medium bg-indigo-50/50"><span class="flex items-start gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>Uncovers the root-cause misconception</span></td>
+            </tr>
+            <tr class="border-t border-gray-100">
+              <td class="px-5 py-4 text-slate-500"><span class="flex items-start gap-2"><i data-lucide="x-circle" class="w-5 h-5 text-rose-400 flex-shrink-0"></i>Leaves parents anxious</span></td>
+              <td class="px-5 py-4 text-slate-800 font-medium bg-indigo-50/50"><span class="flex items-start gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>Gives relief and a concrete plan</span></td>
+            </tr>
+            <tr class="border-t border-gray-100">
+              <td class="px-5 py-4 text-slate-500"><span class="flex items-start gap-2"><i data-lucide="x-circle" class="w-5 h-5 text-rose-400 flex-shrink-0"></i>Generic “study more” advice</span></td>
+              <td class="px-5 py-4 text-slate-800 font-medium bg-indigo-50/50"><span class="flex items-start gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>Targeted 3-day micro-practice</span></td>
+            </tr>
+            <tr class="border-t border-gray-100">
+              <td class="px-5 py-4 text-slate-500"><span class="flex items-start gap-2"><i data-lucide="x-circle" class="w-5 h-5 text-rose-400 flex-shrink-0"></i>60–180 minutes of exam stress</span></td>
+              <td class="px-5 py-4 text-slate-800 font-medium bg-indigo-50/50"><span class="flex items-start gap-2"><i data-lucide="check-circle" class="w-5 h-5 text-green-600 flex-shrink-0"></i>15–20 minute adaptive scan</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 
-          <div class="blog-card dark:bg-slate-800 group flex flex-col md:flex-row" data-aos="fade-up">
-            <div class="blog-img h-48 md:h-auto md:w-2/5 flex-shrink-0 bg-indigo-600 relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=400&h=300&fit=crop&auto=format" alt="" loading="lazy"
-                class="absolute inset-0 w-full h-full object-cover" />
-            </div>
-            <div class="p-5 flex flex-col justify-center">
-              <div class="flex items-center gap-3 text-xs text-slate-400 mb-2">
-                <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> August 30, 2026</span>
-                <span>•</span>
-                <span class="text-green-600 font-medium">Parenting</span>
-              </div>
-              <h2 class="font-heading font-bold text-lg text-slate-800 dark:text-white mb-2 leading-tight group-hover:text-indigo-600 transition-colors">How Parents Can Help Children Beat Exam Stress</h2>
-              <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-3">Practical ways to support your child before and during exams — creating a calm routine without adding pressure.</p>
-              <a href="blog-detail.html" class="inline-flex items-center gap-1.5 text-indigo-600 text-sm font-semibold hover:gap-2 transition-all">
-                Read Article <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
+  <!-- ===================== HOW IT WORKS ===================== -->
+  <section id="how-it-works" class="section-padding text-white" style="background: var(--hero-gradient);">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14" data-aos="fade-up">
+        <span class="inline-flex items-center gap-2 bg-amber-400/15 text-amber-300 text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wide mb-4">
+          <i data-lucide="route" class="w-3.5 h-3.5"></i> How It Works
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl mt-3">The 5-Step Diagnostic Cycle</h2>
+      </div>
+      <div class="relative">
+        <div class="hidden lg:block absolute top-10 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-amber-300/20 via-amber-300/60 to-amber-300/20"></div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-8">
+        <div class="relative text-center" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-20 h-20 mx-auto rounded-2xl bg-white/10 border border-white/15 flex items-center justify-center mb-4 relative z-10">
+            <i data-lucide="clipboard-list" class="w-9 h-9 text-amber-300"></i>
           </div>
+          <div class="text-amber-300 text-xs font-bold uppercase tracking-wide mb-1">Step 1</div>
+          <h3 class="font-heading font-semibold text-lg mb-2">15-Minute Adaptive Test</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">Questions adjust to the student's answers. When an error appears, the test steps back to check the prerequisite concept, without overwhelming the student.</p>
+        </div>
+        <div class="relative text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-20 h-20 mx-auto rounded-2xl bg-white/10 border border-white/15 flex items-center justify-center mb-4 relative z-10">
+            <i data-lucide="scan-search" class="w-9 h-9 text-amber-300"></i>
+          </div>
+          <div class="text-amber-300 text-xs font-bold uppercase tracking-wide mb-1">Step 2</div>
+          <h3 class="font-heading font-semibold text-lg mb-2">Gap &amp; Root-Cause Scan</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">Each topic is broken into small concepts and traced back up to 2–3 grades to find conceptual gaps and misconceptions.</p>
+        </div>
+        <div class="relative text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-20 h-20 mx-auto rounded-2xl bg-white/10 border border-white/15 flex items-center justify-center mb-4 relative z-10">
+            <i data-lucide="file-heart" class="w-9 h-9 text-amber-300"></i>
+          </div>
+          <div class="text-amber-300 text-xs font-bold uppercase tracking-wide mb-1">Step 3</div>
+          <h3 class="font-heading font-semibold text-lg mb-2">Clear Reports for Everyone</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">Parents get clarity, students get a confidence debrief, and mentors get a prescription of exactly what to fix first.</p>
+        </div>
+        <div class="relative text-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-20 h-20 mx-auto rounded-2xl bg-white/10 border border-white/15 flex items-center justify-center mb-4 relative z-10">
+            <i data-lucide="notebook-pen" class="w-9 h-9 text-amber-300"></i>
+          </div>
+          <div class="text-amber-300 text-xs font-bold uppercase tracking-wide mb-1">Step 4</div>
+          <h3 class="font-heading font-semibold text-lg mb-2">Targeted Micro-Practice</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">1–2 page worksheets on the identified gaps only, followed by a 5-minute re-test to measure improvement.</p>
+        </div>
+        <div class="relative text-center" data-aos="fade-up" data-aos-delay="400">
+          <div class="w-20 h-20 mx-auto rounded-2xl bg-white/10 border border-white/15 flex items-center justify-center mb-4 relative z-10">
+            <i data-lucide="trending-up" class="w-9 h-9 text-amber-300"></i>
+          </div>
+          <div class="text-amber-300 text-xs font-bold uppercase tracking-wide mb-1">Step 5</div>
+          <h3 class="font-heading font-semibold text-lg mb-2">Ongoing Mastery Tracking</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">The student's profile keeps updating, with spaced-revision reminders so fixed concepts stay fixed.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="blog-card dark:bg-slate-800 group flex flex-col md:flex-row" data-aos="fade-up">
-            <div class="blog-img h-48 md:h-auto md:w-2/5 flex-shrink-0 bg-indigo-600 relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=400&h=300&fit=crop&auto=format" alt="" loading="lazy"
-                class="absolute inset-0 w-full h-full object-cover" />
-            </div>
-            <div class="p-5 flex flex-col justify-center">
-              <div class="flex items-center gap-3 text-xs text-slate-400 mb-2">
-                <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> August 18, 2026</span>
-                <span>•</span>
-                <span class="text-blue-600 font-medium">NEET</span>
-              </div>
-              <h2 class="font-heading font-bold text-lg text-slate-800 dark:text-white mb-2 leading-tight group-hover:text-indigo-600 transition-colors">NEET Biology: How to Read NCERT Line by Line</h2>
-              <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-3">A step-by-step method to read, highlight and revise NCERT Biology so that no question catches you by surprise.</p>
-              <a href="blog-detail.html" class="inline-flex items-center gap-1.5 text-indigo-600 text-sm font-semibold hover:gap-2 transition-all">
-                Read Article <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
+  <!-- ===================== ERROR TYPES ===================== -->
+  <section class="section-padding bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="scan-search" class="w-3.5 h-3.5"></i>
+          Root-Cause Scan
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Four Reasons Marks Are Lost</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">The report shows not just which answers were wrong, but the kind of mistake behind each one.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="card-medical" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="brain" class="w-6 h-6 text-indigo-600"></i>
           </div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 mb-2">Conceptual Gaps</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">A core principle was never fully understood and needs to be re-taught.</p>
+        </div>
+        <div class="card-medical" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="wrench" class="w-6 h-6 text-amber-600"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 mb-2">Procedural Slips</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">The concept is clear, but steps are executed with mechanical mistakes.</p>
+        </div>
+        <div class="card-medical" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="book-open-text" class="w-6 h-6 text-green-600"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 mb-2">Reading Traps</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Constraints in word problems are misread or misinterpreted.</p>
+        </div>
+        <div class="card-medical" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-12 h-12 bg-sky-100 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="timer" class="w-6 h-6 text-sky-600"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 mb-2">Pacing Pressure</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Errors cluster when the student is working against the clock.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-          <div class="blog-card dark:bg-slate-800 group flex flex-col md:flex-row" data-aos="fade-up">
-            <div class="blog-img h-48 md:h-auto md:w-2/5 flex-shrink-0 bg-indigo-600 relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?w=400&h=300&fit=crop&auto=format" alt="" loading="lazy"
-                class="absolute inset-0 w-full h-full object-cover" />
-            </div>
-            <div class="p-5 flex flex-col justify-center">
-              <div class="flex items-center gap-3 text-xs text-slate-400 mb-2">
-                <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> August 5, 2026</span>
-                <span>•</span>
-                <span class="text-purple-600 font-medium">Online Learning</span>
-              </div>
-              <h2 class="font-heading font-bold text-lg text-slate-800 dark:text-white mb-2 leading-tight group-hover:text-indigo-600 transition-colors">Making the Most of Online Classes: 7 Tips for Students</h2>
-              <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-3">Set up your study space, stay focused on screen and turn live online classes into real learning.</p>
-              <a href="blog-detail.html" class="inline-flex items-center gap-1.5 text-indigo-600 text-sm font-semibold hover:gap-2 transition-all">
-                Read Article <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="blog-card dark:bg-slate-800 group flex flex-col md:flex-row" data-aos="fade-up">
-            <div class="blog-img h-48 md:h-auto md:w-2/5 flex-shrink-0 bg-indigo-600 relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&h=300&fit=crop&auto=format" alt="" loading="lazy"
-                class="absolute inset-0 w-full h-full object-cover" />
-            </div>
-            <div class="p-5 flex flex-col justify-center">
-              <div class="flex items-center gap-3 text-xs text-slate-400 mb-2">
-                <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> July 22, 2026</span>
-                <span>•</span>
-                <span class="text-indigo-600 font-medium">Study Tips</span>
-              </div>
-              <h2 class="font-heading font-bold text-lg text-slate-800 dark:text-white mb-2 leading-tight group-hover:text-indigo-600 transition-colors">The Pomodoro Method: Study Smarter in 25-Minute Sprints</h2>
-              <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-3">How short, focused study sessions with planned breaks can improve concentration and memory.</p>
-              <a href="blog-detail.html" class="inline-flex items-center gap-1.5 text-indigo-600 text-sm font-semibold hover:gap-2 transition-all">
-                Read Article <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
+  <!-- ===================== SAMPLE REPORT ===================== -->
+  <section id="sample-report" class="section-padding bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="file-bar-chart" class="w-3.5 h-3.5"></i>
+          Sample Report
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">What Parents Receive</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">A clear, jargon-free report with strengths, gaps, root causes and a day-by-day plan.</p>
+      </div>
+      <div data-aos="fade-up">
+      <div class="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden">
+        <div class="bg-slate-900 text-white px-6 py-4 flex flex-wrap items-center justify-between gap-3">
+          <div class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="" class="w-9 h-9 rounded-full" />
+            <div>
+              <div class="font-heading font-bold">Foundation Gap Radar™ Report</div>
+              <div class="text-xs text-slate-400">Sample report · for illustration only</div>
             </div>
           </div>
-          <p id="no-posts" class="hidden text-center text-slate-500 py-10">No articles match your search.</p>
+          <div class="flex flex-wrap gap-x-5 gap-y-1 text-xs text-slate-300">
+            <span><strong class="text-white">Student:</strong> Sample Student</span>
+            <span><strong class="text-white">Class:</strong> 9</span>
+            <span><strong class="text-white">Subject:</strong> Mathematics</span>
+          </div>
         </div>
 
-        <!-- Sidebar -->
-        <aside class="space-y-8">
-          <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 shadow-soft">
-            <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-5 flex items-center gap-2">
-              <i data-lucide="folder" class="w-5 h-5 text-indigo-600"></i> Categories
-            </h3>
-            <ul class="space-y-3">
-              <li><a href="#" class="flex items-center justify-between text-sm text-slate-600 dark:text-slate-300 hover:text-indigo-600 transition-colors"><span>Study Tips</span><span class="bg-indigo-50 dark:bg-slate-700 text-indigo-600 text-xs px-2 py-0.5 rounded-full">2</span></a></li>
-              <li><a href="#" class="flex items-center justify-between text-sm text-slate-600 dark:text-slate-300 hover:text-indigo-600 transition-colors"><span>JEE</span><span class="bg-indigo-50 dark:bg-slate-700 text-indigo-600 text-xs px-2 py-0.5 rounded-full">1</span></a></li>
-              <li><a href="#" class="flex items-center justify-between text-sm text-slate-600 dark:text-slate-300 hover:text-indigo-600 transition-colors"><span>NEET</span><span class="bg-indigo-50 dark:bg-slate-700 text-indigo-600 text-xs px-2 py-0.5 rounded-full">1</span></a></li>
-              <li><a href="#" class="flex items-center justify-between text-sm text-slate-600 dark:text-slate-300 hover:text-indigo-600 transition-colors"><span>Parenting</span><span class="bg-indigo-50 dark:bg-slate-700 text-indigo-600 text-xs px-2 py-0.5 rounded-full">1</span></a></li>
-              <li><a href="#" class="flex items-center justify-between text-sm text-slate-600 dark:text-slate-300 hover:text-indigo-600 transition-colors"><span>Online Learning</span><span class="bg-indigo-50 dark:bg-slate-700 text-indigo-600 text-xs px-2 py-0.5 rounded-full">1</span></a></li>
-            </ul>
+        <div class="grid lg:grid-cols-12 gap-6 p-6">
+          <!-- Score -->
+          <div class="lg:col-span-3 bg-slate-50 rounded-2xl p-5 text-center">
+            <div class="text-xs font-bold uppercase tracking-wide text-slate-500 mb-3">Overall Foundation Score</div>
+            <div class="relative w-44 aspect-[2/1] overflow-hidden mx-auto">
+            <div class="absolute inset-0 rounded-t-full" style="background: conic-gradient(from 270deg at 50% 100%, #f97316 0deg, #f59e0b 86.4deg, #e2e8f0 86.4deg 180deg, transparent 180deg);"></div>
+            <div class="absolute left-[14%] right-[14%] bottom-0 top-[28%] bg-white rounded-t-full flex items-end justify-center pb-1">
+              <span class="font-heading font-extrabold text-3xl text-slate-900">48%</span>
+            </div>
           </div>
-
-          <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 shadow-soft">
-            <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-5 flex items-center gap-2">
-              <i data-lucide="flame" class="w-5 h-5 text-indigo-600"></i> Popular Posts
-            </h3>
-            <div class="space-y-4">
-              <a href="blog-detail.html" class="flex gap-3 group">
-                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=80&h=80&fit=crop&auto=format" alt="" loading="lazy" class="w-14 h-14 rounded-lg object-cover flex-shrink-0" />
-                <div class="min-w-0">
-                  <div class="text-sm font-semibold text-slate-800 dark:text-white leading-snug group-hover:text-indigo-600 transition-colors line-clamp-2">10 Smart Study Habits of Board Exam Toppers</div>
-                  <div class="text-xs text-slate-400 mt-1">September 24, 2026</div>
-                </div>
-              </a>
-              <a href="blog-detail.html" class="flex gap-3 group">
-                <img src="https://images.unsplash.com/photo-1453733190371-0a9bedd82893?w=80&h=80&fit=crop&auto=format" alt="" loading="lazy" class="w-14 h-14 rounded-lg object-cover flex-shrink-0" />
-                <div class="min-w-0">
-                  <div class="text-sm font-semibold text-slate-800 dark:text-white leading-snug group-hover:text-indigo-600 transition-colors line-clamp-2">How to Start JEE Preparation in Class 9 and 10</div>
-                  <div class="text-xs text-slate-400 mt-1">September 12, 2026</div>
-                </div>
-              </a>
-              <a href="blog-detail.html" class="flex gap-3 group">
-                <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=80&h=80&fit=crop&auto=format" alt="" loading="lazy" class="w-14 h-14 rounded-lg object-cover flex-shrink-0" />
-                <div class="min-w-0">
-                  <div class="text-sm font-semibold text-slate-800 dark:text-white leading-snug group-hover:text-indigo-600 transition-colors line-clamp-2">How Parents Can Help Children Beat Exam Stress</div>
-                  <div class="text-xs text-slate-400 mt-1">August 30, 2026</div>
-                </div>
-              </a>
+            <div class="mt-4 text-left space-y-2 text-sm">
+              <div class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-600 mt-0.5 flex-shrink-0"></i><span class="text-slate-700">Strong in decimals and basic equations</span></div>
+              <div class="flex items-start gap-2"><i data-lucide="alert-circle" class="w-4 h-4 text-rose-500 mt-0.5 flex-shrink-0"></i><span class="text-slate-700">3 foundation gaps from Class 7–8</span></div>
+              <div class="flex items-start gap-2"><i data-lucide="sparkles" class="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0"></i><span class="text-slate-700">High potential — gaps are fixable</span></div>
             </div>
           </div>
 
-          <div class="bg-gradient-to-br from-indigo-600 to-indigo-800 rounded-2xl p-6 text-white">
-            <h3 class="font-heading font-semibold text-lg mb-2 flex items-center gap-2">
-              <i data-lucide="mail" class="w-5 h-5"></i> Newsletter
-            </h3>
-            <p class="text-indigo-100 text-sm mb-4">Get new articles, study tips and exam alerts in your inbox.</p>
-            <form data-toast="Subscribed! Look out for study tips in your inbox." class="space-y-3">
-              <input type="email" placeholder="Your email address" required
-                class="w-full bg-white/10 border border-white/20 text-white placeholder-indigo-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-white transition-all" />
-              <button type="submit"
-                class="w-full bg-white text-indigo-700 font-semibold rounded-lg py-2.5 text-sm hover:bg-indigo-50 transition-colors flex items-center justify-center gap-2">
-                <i data-lucide="send" class="w-4 h-4"></i> Subscribe
-              </button>
-            </form>
-          </div>
-
-          <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 shadow-soft">
-            <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-5 flex items-center gap-2">
-              <i data-lucide="tag" class="w-5 h-5 text-indigo-600"></i> Tags
-            </h3>
-            <div class="flex flex-wrap gap-2">
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Board Exams</a>
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">JEE</a>
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">NEET</a>
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Revision</a>
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Time Management</a>
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Maths</a>
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Science</a>
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Exam Stress</a>
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">CUET</a>
+          <!-- Heatmap -->
+          <div class="lg:col-span-5">
+            <div class="text-xs font-bold uppercase tracking-wide text-slate-500 mb-3">Concept Heatmap</div>
+            <div class="overflow-x-auto">
+              <table class="w-full">
+                <thead><tr><th></th><th class="px-1 py-2 font-medium text-slate-500 text-xs text-center">Class 6</th><th class="px-1 py-2 font-medium text-slate-500 text-xs text-center">Class 7</th><th class="px-1 py-2 font-medium text-slate-500 text-xs text-center">Class 8</th><th class="px-1 py-2 font-medium text-slate-500 text-xs text-center">Class 9</th></tr></thead>
+                <tbody>
+              <tr><th class="pr-3 py-1 text-left font-medium text-slate-700 text-xs sm:text-sm whitespace-nowrap">Integers &amp; negative signs</th><td class="p-1"><div class="h-7 rounded bg-green-500" title="Mastered"></div></td><td class="p-1"><div class="h-7 rounded bg-rose-500" title="Gap found"></div></td><td class="p-1"><div class="h-7 rounded bg-amber-400" title="Partly understood"></div></td><td class="p-1"><div class="h-7 rounded bg-amber-400" title="Partly understood"></div></td></tr>
+              <tr><th class="pr-3 py-1 text-left font-medium text-slate-700 text-xs sm:text-sm whitespace-nowrap">Fractions &amp; reciprocals</th><td class="p-1"><div class="h-7 rounded bg-green-500" title="Mastered"></div></td><td class="p-1"><div class="h-7 rounded bg-amber-400" title="Partly understood"></div></td><td class="p-1"><div class="h-7 rounded bg-rose-500" title="Gap found"></div></td><td class="p-1"><div class="h-7 rounded bg-rose-500" title="Gap found"></div></td></tr>
+              <tr><th class="pr-3 py-1 text-left font-medium text-slate-700 text-xs sm:text-sm whitespace-nowrap">Decimals &amp; percentages</th><td class="p-1"><div class="h-7 rounded bg-green-500" title="Mastered"></div></td><td class="p-1"><div class="h-7 rounded bg-green-500" title="Mastered"></div></td><td class="p-1"><div class="h-7 rounded bg-green-500" title="Mastered"></div></td><td class="p-1"><div class="h-7 rounded bg-amber-400" title="Partly understood"></div></td></tr>
+              <tr><th class="pr-3 py-1 text-left font-medium text-slate-700 text-xs sm:text-sm whitespace-nowrap">Ratio &amp; proportion</th><td class="p-1"><div class="h-7 rounded bg-green-500" title="Mastered"></div></td><td class="p-1"><div class="h-7 rounded bg-amber-400" title="Partly understood"></div></td><td class="p-1"><div class="h-7 rounded bg-rose-500" title="Gap found"></div></td><td class="p-1"><div class="h-7 rounded bg-rose-500" title="Gap found"></div></td></tr>
+              <tr><th class="pr-3 py-1 text-left font-medium text-slate-700 text-xs sm:text-sm whitespace-nowrap">Linear equations</th><td class="p-1"><div class="h-7 rounded bg-green-500" title="Mastered"></div></td><td class="p-1"><div class="h-7 rounded bg-green-500" title="Mastered"></div></td><td class="p-1"><div class="h-7 rounded bg-amber-400" title="Partly understood"></div></td><td class="p-1"><div class="h-7 rounded bg-rose-500" title="Gap found"></div></td></tr>
+              <tr><th class="pr-3 py-1 text-left font-medium text-slate-700 text-xs sm:text-sm whitespace-nowrap">Algebraic transposition</th><td class="p-1"><div class="h-7 rounded bg-green-500" title="Mastered"></div></td><td class="p-1"><div class="h-7 rounded bg-green-500" title="Mastered"></div></td><td class="p-1"><div class="h-7 rounded bg-rose-500" title="Gap found"></div></td><td class="p-1"><div class="h-7 rounded bg-rose-500" title="Gap found"></div></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="flex flex-wrap gap-4 mt-3 text-xs text-slate-500">
+              <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-green-500"></span>Mastered</span>
+              <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-amber-400"></span>Partly understood</span>
+              <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-sm bg-rose-500"></span>Gap found</span>
+            </div>
+            <div class="mt-4 bg-amber-50 border border-amber-200 rounded-xl p-3 text-sm text-amber-900">
+              <strong>Root cause found:</strong> Class 9 equation errors trace back to a Class 7 gap in fraction reciprocals and ratio reasoning.
             </div>
           </div>
-        </aside>
+
+          <!-- Error types -->
+          <div class="lg:col-span-4 space-y-6">
+            <div>
+              <div class="text-xs font-bold uppercase tracking-wide text-slate-500 mb-3">Why Marks Were Lost</div>
+              <div class="flex items-center gap-5">
+                <div class="relative w-28 h-28 flex-shrink-0 rounded-full" style="background: conic-gradient(#4f46e5 0 35%, #f97316 35% 60%, #22c55e 60% 75%, #0ea5e9 75% 100%);">
+                  <div class="absolute inset-4 bg-white rounded-full"></div>
+                </div>
+                <ul class="space-y-1.5 text-sm">
+                  <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-sm bg-indigo-600"></span><span class="text-slate-700">Conceptual gaps <strong>35%</strong></span></li>
+                  <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-sm bg-orange-500"></span><span class="text-slate-700">Procedural slips <strong>25%</strong></span></li>
+                  <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-sm bg-green-500"></span><span class="text-slate-700">Reading traps <strong>15%</strong></span></li>
+                  <li class="flex items-center gap-2"><span class="w-3 h-3 rounded-sm bg-sky-500"></span><span class="text-slate-700">Pacing pressure <strong>25%</strong></span></li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div class="text-xs font-bold uppercase tracking-wide text-slate-500 mb-2">Action Plan</div>
+              <ul>
+              <li class="flex items-start justify-between gap-3 py-2 border-b border-gray-100 last:border-0">
+                <span class="flex items-start gap-2 text-sm text-slate-700"><span class="w-2.5 h-2.5 rounded-sm bg-rose-500 mt-1.5 flex-shrink-0"></span>Re-learn negative-sign rules (Class 7)</span>
+                <span class="text-xs font-semibold text-slate-500 whitespace-nowrap mt-0.5">Days 1–2</span>
+              </li>
+              <li class="flex items-start justify-between gap-3 py-2 border-b border-gray-100 last:border-0">
+                <span class="flex items-start gap-2 text-sm text-slate-700"><span class="w-2.5 h-2.5 rounded-sm bg-rose-500 mt-1.5 flex-shrink-0"></span>Fraction reciprocals &amp; division (Class 7)</span>
+                <span class="text-xs font-semibold text-slate-500 whitespace-nowrap mt-0.5">Days 1–3</span>
+              </li>
+              <li class="flex items-start justify-between gap-3 py-2 border-b border-gray-100 last:border-0">
+                <span class="flex items-start gap-2 text-sm text-slate-700"><span class="w-2.5 h-2.5 rounded-sm bg-amber-500 mt-1.5 flex-shrink-0"></span>Ratio &amp; proportion bridge module (Class 8)</span>
+                <span class="text-xs font-semibold text-slate-500 whitespace-nowrap mt-0.5">Days 3–5</span>
+              </li>
+              <li class="flex items-start justify-between gap-3 py-2 border-b border-gray-100 last:border-0">
+                <span class="flex items-start gap-2 text-sm text-slate-700"><span class="w-2.5 h-2.5 rounded-sm bg-indigo-500 mt-1.5 flex-shrink-0"></span>Multi-step transposition practice (Class 9)</span>
+                <span class="text-xs font-semibold text-slate-500 whitespace-nowrap mt-0.5">Days 5–7</span>
+              </li>
+              <li class="flex items-start justify-between gap-3 py-2 border-b border-gray-100 last:border-0">
+                <span class="flex items-start gap-2 text-sm text-slate-700"><span class="w-2.5 h-2.5 rounded-sm bg-green-500 mt-1.5 flex-shrink-0"></span>5-minute re-test to measure progress</span>
+                <span class="text-xs font-semibold text-slate-500 whitespace-nowrap mt-0.5">Day 8</span>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-100 bg-indigo-50/60 px-6 py-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm">
+          <span class="font-semibold text-slate-800 flex items-center gap-2"><i data-lucide="trending-up" class="w-4 h-4 text-green-600"></i> After the plan:</span>
+          <span class="text-slate-700">Fraction reciprocals <strong class="text-rose-600">35%</strong> → <strong class="text-green-600">85%</strong> mastery</span>
+          <span class="text-slate-700">Algebraic transposition <strong class="text-rose-600">40%</strong> → <strong class="text-green-600">80%</strong> mastery</span>
+        </div>
+      </div>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6 mt-10">
+        <div class="card-medical" data-aos="fade-up">
+          <i data-lucide="heart-handshake" class="w-8 h-8 text-indigo-600 mb-3"></i>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 mb-1">For Parents</h3>
+          <p class="text-slate-500 text-sm">Clarity over anxiety — a simple summary of strengths and the 2–3 foundation blocks to repair.</p>
+        </div>
+        <div class="card-medical" data-aos="fade-up" data-aos-delay="100">
+          <i data-lucide="smile" class="w-8 h-8 text-amber-500 mb-3"></i>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 mb-1">For Students</h3>
+          <p class="text-slate-500 text-sm">A confidence debrief — “you're not bad at maths, you just missed one idea in Class 7.”</p>
+        </div>
+        <div class="card-medical" data-aos="fade-up" data-aos-delay="200">
+          <i data-lucide="clipboard-check" class="w-8 h-8 text-green-600 mb-3"></i>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 mb-1">For Mentors</h3>
+          <p class="text-slate-500 text-sm">A prescription sheet with the exact bridge modules to cover before regular classes continue.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== CTA SECTION ===================== -->
-  <section class="section-padding" style="background: var(--hero-gradient);">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="zoom-in">
-      <div
-        class="inline-flex items-center gap-2 bg-amber-400/15 border border-amber-300/30 text-amber-300 text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wide mb-6">
-        <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
-        Start Today
+  <!-- ===================== FAQ ===================== -->
+  <section class="section-padding bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="circle-help" class="w-3.5 h-3.5"></i>
+          FAQ
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Questions Parents Ask</h2>
       </div>
-      <h2 class="font-heading font-bold text-2xl lg:text-4xl text-white mb-5 leading-tight">Turn Good Advice Into<br />Great Results</h2>
-      <p class="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">Tips help — but expert teaching, regular practice and personal attention make the real difference. Try a free demo class today.</p>
-      <div class="flex flex-wrap gap-4 justify-center">
-        <a href="index.html#demo" class="btn-primary text-base py-3.5 px-8">
-          <i data-lucide="calendar-check" class="w-5 h-5"></i>
-          Book Free Demo Class
-        </a>
-        <a href="tel:+919129604415" class="btn-outline text-base py-3.5 px-8">
-          <i data-lucide="phone" class="w-5 h-5"></i>
-          Call +91 91296 04415
-        </a>
+      <div class="space-y-0" data-aos="fade-up">
+        <div class="faq-item dark:border-slate-700">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            Is this another high-pressure entrance exam?
+            <i data-lucide="plus" class="w-5 h-5 text-indigo-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">No. The Foundation Gap Radar™ is a diagnostic tool, not a pass/fail test. It takes 15–20 minutes, adapts to the student, and is designed to build confidence by showing strengths alongside gaps that can be fixed.</div>
+        </div>
+        <div class="faq-item dark:border-slate-700">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            Which classes and subjects does it cover?
+            <i data-lucide="plus" class="w-5 h-5 text-indigo-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">Students from Class 6 to Class 12, with a focus on foundational Mathematics and Science (Physics and Chemistry).</div>
+        </div>
+        <div class="faq-item dark:border-slate-700">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            How soon do we get the results?
+            <i data-lucide="plus" class="w-5 h-5 text-indigo-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">Right after the scan. The report is shared with parents on WhatsApp and email, and our mentor walks you through it.</div>
+        </div>
+        <div class="faq-item dark:border-slate-700">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            Does it cost anything?
+            <i data-lucide="plus" class="w-5 h-5 text-indigo-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">No. The 15-minute scan and its report are complimentary.</div>
+        </div>
+        <div class="faq-item dark:border-slate-700">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            What happens after the scan?
+            <i data-lucide="plus" class="w-5 h-5 text-indigo-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">You get a short, targeted practice plan for the gaps that were found. A quick re-test afterwards shows how much has improved.</div>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- ===================== BOOK ===================== -->
+  <section id="book" class="section-padding bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4"><i data-lucide="gift" class="w-3.5 h-3.5"></i> Complimentary</span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 mt-3">Give Your Child Clarity, Not Anxiety</h2>
+        <p class="text-slate-500 mt-3 max-w-xl mx-auto">Book a free 15-minute Foundation Gap Radar™ scan at Young Minds Academy. We'll call to confirm a convenient time.</p>
+      </div>
+      <div class="bg-gradient-to-br from-slate-900 to-indigo-950 rounded-2xl p-8 lg:p-12 shadow-2xl max-w-4xl mx-auto" data-aos="fade-up">
+        <form id="radar-form" data-toast="Thank you! We'll call you within 24 hours to schedule your free Gap Radar scan." class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Student Name *</label>
+            <input type="text" placeholder="Student's full name" class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all" required />
+          </div>
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Parent's Phone (WhatsApp) *</label>
+            <input type="tel" placeholder="10-digit mobile number" class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all" required />
+          </div>
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Class *</label>
+            <select class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all" required><option>Class 6</option><option>Class 7</option><option>Class 8</option><option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option></select>
+          </div>
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Subject to Scan</label>
+            <select class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all"><option>Mathematics</option><option>Science (Physics &amp; Chemistry)</option><option>Both Maths &amp; Science</option></select>
+          </div>
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Preferred Date</label>
+            <input type="date" class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all" />
+          </div>
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Biggest Concern (optional)</label>
+            <input type="text" placeholder="e.g. low marks in algebra" class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all" />
+          </div>
+          <div class="md:col-span-2 flex justify-center mt-2">
+            <button type="submit" class="btn-primary px-10 py-3.5 text-base">
+              <i data-lucide="radar" class="w-5 h-5"></i>
+              Book My Free 15-Minute Scan
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA STRIP ===================== -->
+  <div class="bg-amber-400 py-5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3 text-slate-900">
+        <i data-lucide="radar" class="w-6 h-6"></i>
+        <span class="font-heading font-bold">Prefer to talk first? Call us and book your free scan.</span>
+      </div>
+      <a href="tel:+919129604415" class="bg-slate-900 text-white font-heading font-bold px-6 py-2.5 rounded-lg hover:bg-slate-800 transition-all text-sm flex items-center gap-2">
+        <i data-lucide="phone" class="w-4 h-4"></i> +91 91296 04415
+      </a>
+    </div>
+  </div>
 
   <!-- ===================== FOOTER ===================== -->
 

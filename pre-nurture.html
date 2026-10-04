@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Study Blog | Young Minds Academy</title>
-  <meta name="description" content="Study tips, exam strategies and parenting advice from Young Minds Academy." />
+  <title>Pre-Nurture (Class 5–8) | Young Minds Academy</title>
+  <meta name="description" content="Strong basics in all school subjects plus mental ability, so young learners build curiosity, confidence and good study habits from the start." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -128,258 +128,375 @@
     </div>
   </nav>
 
-  <!-- ===================== PAGE HERO ===================== -->
-  <section class="relative py-20" style="background: var(--hero-gradient);">
-    <div class="absolute top-20 right-16 w-72 h-72 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-      <span
-        class="inline-flex items-center gap-2 bg-white/10 text-slate-200 text-xs font-semibold px-4 py-2 rounded-full uppercase tracking-wide mb-4"
-        data-aos="fade-up">
-        <i data-lucide="rss" class="w-3.5 h-3.5"></i> Study Blog
-      </span>
-      <h1 class="font-heading font-extrabold text-4xl lg:text-5xl text-white mb-4" data-aos="fade-up"
-        data-aos-delay="100">
-        Study Tips &amp; Exam Guidance
-      </h1>
-      <p class="text-slate-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-        Practical advice on studying smarter, preparing for exams and supporting your child — from the teachers and counsellors at Young Minds Academy.
-      </p>
-      <!-- Search -->
-      <div class="max-w-md mx-auto mt-8" data-aos="fade-up" data-aos-delay="300">
-        <div class="relative">
-          <input type="text" id="blog-search" placeholder="Search articles..." oninput="filterPosts()"
-            class="w-full bg-white/10 border border-white/20 text-white placeholder-slate-400 rounded-full px-5 py-3 pl-12 text-sm focus:outline-none focus:border-indigo-400 transition-all" />
-          <i data-lucide="search" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400"></i>
+  <!-- ===================== HERO ===================== -->
+  <section class="relative min-h-[80vh] flex items-center" style="background: var(--hero-gradient);">
+    <div class="absolute top-20 right-16 w-72 h-72 bg-indigo-500/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-40 left-10 w-56 h-56 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="inline-flex items-center gap-2 bg-amber-400/15 text-amber-300 text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wide mb-4" data-aos="fade-up">
+            <i data-lucide="brain" class="w-3.5 h-3.5"></i>
+            Classes 5th – 8th
+          </span>
+          <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-[3.4rem] text-white leading-tight mb-6" data-aos="fade-up" data-aos-delay="100">
+            Pre-Nurture<br /><span class="text-amber-400">Classes 5th – 8th</span>
+          </h1>
+          <p class="text-slate-300 text-lg leading-relaxed mb-8 max-w-lg" data-aos="fade-up" data-aos-delay="200">
+            Strong basics in all school subjects plus mental ability, so young learners build curiosity, confidence and good study habits from the start.
+          </p>
+          <div class="flex flex-wrap gap-4 mb-10" data-aos="fade-up" data-aos-delay="300">
+            <a href="#enquire" class="btn-primary text-base py-3.5 px-7">
+              <i data-lucide="calendar-check" class="w-5 h-5"></i> Book Free Demo
+            </a>
+            <a href="#overview" class="btn-outline text-base py-3.5 px-7">
+              <i data-lucide="compass" class="w-5 h-5"></i> Course Details
+            </a>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-xl" data-aos="fade-up" data-aos-delay="400">
+            <div class="bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+              <div class="flex items-center gap-2 text-slate-400 text-xs mb-1"><i data-lucide="users" class="w-3.5 h-3.5"></i> Classes</div>
+              <div class="font-heading font-semibold text-white text-sm">5th – 8th</div>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+              <div class="flex items-center gap-2 text-slate-400 text-xs mb-1"><i data-lucide="layers" class="w-3.5 h-3.5"></i> Batches</div>
+              <div class="font-heading font-semibold text-white text-sm">Regular &amp; Platinum</div>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+              <div class="flex items-center gap-2 text-slate-400 text-xs mb-1"><i data-lucide="book-open" class="w-3.5 h-3.5"></i> Subjects</div>
+              <div class="font-heading font-semibold text-white text-sm">All subjects + Mental Ability</div>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+              <div class="flex items-center gap-2 text-slate-400 text-xs mb-1"><i data-lucide="school" class="w-3.5 h-3.5"></i> Boards</div>
+              <div class="font-heading font-semibold text-white text-sm">CBSE · ICSE · State</div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden lg:flex justify-center" data-aos="fade-left" data-aos-delay="200">
+          <div class="relative">
+            <div class="w-80 h-80 xl:w-96 xl:h-96 bg-gradient-to-br from-indigo-600/20 to-slate-600/20 rounded-3xl border border-white/10 flex items-center justify-center overflow-hidden" style="animation: float 6s ease-in-out infinite;">
+              <img src="assets/img/classroom-1.jpg" alt="Students at Young Minds Academy" class="object-cover w-full h-full" />
+            </div>
+            <div class="absolute -top-6 -left-10 bg-white rounded-xl px-4 py-3 shadow-xl border border-gray-100">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center">
+                  <i data-lucide="users" class="w-4 h-4 text-indigo-600"></i>
+                </div>
+                <div>
+                  <div class="font-heading font-bold text-sm text-slate-800">Small Batches</div>
+                  <div class="text-xs text-slate-500">Personal attention</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== BLOG CONTENT ===================== -->
+  <!-- ===================== OVERVIEW ===================== -->
+  <section id="overview" class="section-padding bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right">
+          <span class="section-tag mb-4">
+            <i data-lucide="info" class="w-3.5 h-3.5"></i>
+            Course Overview
+          </span>
+          <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mb-5">
+            Building Strong Basics Early
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
+            Classes 5 to 8 are when students first meet fractions, algebra, geometry and science as real subjects. Gaps formed here grow bigger every year. Our Pre-Nurture program makes these concepts click through clear explanations, plenty of practice and regular revision, so students move into Class 9 confident and curious.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-indigo-600"></i>
+              </div>
+              <span class="text-slate-700 dark:text-slate-300 text-sm">All school subjects: Maths, Science, English and Social Science</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-indigo-600"></i>
+              </div>
+              <span class="text-slate-700 dark:text-slate-300 text-sm">Mental ability and logical reasoning sessions</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-indigo-600"></i>
+              </div>
+              <span class="text-slate-700 dark:text-slate-300 text-sm">Homework support and regular revision</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-indigo-600"></i>
+              </div>
+              <span class="text-slate-700 dark:text-slate-300 text-sm">Good study habits and time management</span>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left">
+          <div class="bg-gradient-to-br from-indigo-50 to-white dark:from-slate-800 dark:to-slate-700 rounded-2xl p-8 border border-indigo-100 dark:border-slate-600">
+            <h3 class="font-heading font-semibold text-xl text-slate-800 dark:text-white mb-4 flex items-center gap-2">
+              <i data-lucide="package-open" class="w-6 h-6 text-indigo-600"></i>
+              The Course Includes
+            </h3>
+            <ul class="space-y-3 text-slate-600 dark:text-slate-300 text-sm">
+              <li class="flex items-start gap-2">
+                <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0"></i>
+                <span>Concept classes for every school subject</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0"></i>
+                <span>Notes and worksheets for each chapter</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0"></i>
+                <span>Regular chapter tests with report cards</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0"></i>
+                <span>Mental ability practice</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0"></i>
+                <span>Parent–teacher meetings</span>
+              </li>
+            </ul>
+            <a href="#enquire" class="btn-primary mt-6 w-full justify-center text-sm py-3">
+              <i data-lucide="calendar-check" class="w-4 h-4"></i> Book a Free Demo Class
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BENEFITS ===================== -->
+  <section class="section-padding bg-slate-50 dark:bg-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="star" class="w-3.5 h-3.5"></i>
+          Benefits
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Why Students Choose This Course</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">A program designed around how students actually learn best.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card-medical dark:bg-slate-700 text-center" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="lightbulb" class="w-7 h-7 text-blue-600"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2">Concept Clarity</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">Students understand the 'why' behind every formula instead of memorising it.</p>
+        </div>
+        <div class="card-medical dark:bg-slate-700 text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="smile" class="w-7 h-7 text-amber-600"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2">Confidence &amp; Curiosity</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">A friendly, encouraging classroom where every question is welcome.</p>
+        </div>
+        <div class="card-medical dark:bg-slate-700 text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="rocket" class="w-7 h-7 text-green-600"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2">Ready for Class 9</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">A smooth move into Pre-Foundation and future board and competitive exams.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESS ===================== -->
   <section class="section-padding bg-white dark:bg-slate-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-3 gap-10">
-        <!-- Main Content -->
-        <div class="lg:col-span-2 space-y-8" id="post-list">
-          <div class="blog-card dark:bg-slate-800 group" data-aos="fade-up">
-            <div class="blog-img h-64 md:h-80 bg-indigo-600 relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&h=400&fit=crop&auto=format" alt=""
-                class="absolute inset-0 w-full h-full object-cover" />
-              <div class="absolute top-4 left-4 bg-amber-500 text-white text-xs font-semibold px-3 py-1 rounded-full">Featured</div>
-            </div>
-            <div class="p-6">
-              <div class="flex items-center gap-3 text-xs text-slate-400 mb-2">
-                <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> September 24, 2026</span>
-                <span>•</span>
-                <span class="text-indigo-600 font-medium">Study Tips</span>
-              </div>
-              <h2 class="font-heading font-bold text-xl lg:text-2xl text-slate-800 dark:text-white mb-3 leading-tight group-hover:text-indigo-600 transition-colors">10 Smart Study Habits of Board Exam Toppers</h2>
-              <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-4">Simple, proven routines for revision, note-making and time management that top scorers swear by. Small daily habits that add up to big results.</p>
-              <a href="blog-detail.html" class="inline-flex items-center gap-1.5 text-indigo-600 text-sm font-semibold hover:gap-2 transition-all">
-                Read Article <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
+      <div class="text-center mb-16" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="route" class="w-3.5 h-3.5"></i>
+          How to Join
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Getting Started Is Easy</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">Four simple steps from your first demo class to regular learning.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+        <div class="text-center card-medical dark:bg-slate-800 relative" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-16 h-16 bg-indigo-600 shadow-indigo-200 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg dark:shadow-none relative z-10">
+            <i data-lucide="calendar-check" class="w-7 h-7 text-white"></i>
           </div>
-
-          <div class="blog-card dark:bg-slate-800 group flex flex-col md:flex-row" data-aos="fade-up">
-            <div class="blog-img h-48 md:h-auto md:w-2/5 flex-shrink-0 bg-indigo-600 relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1453733190371-0a9bedd82893?w=400&h=300&fit=crop&auto=format" alt="" loading="lazy"
-                class="absolute inset-0 w-full h-full object-cover" />
-            </div>
-            <div class="p-5 flex flex-col justify-center">
-              <div class="flex items-center gap-3 text-xs text-slate-400 mb-2">
-                <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> September 12, 2026</span>
-                <span>•</span>
-                <span class="text-amber-600 font-medium">JEE</span>
-              </div>
-              <h2 class="font-heading font-bold text-lg text-slate-800 dark:text-white mb-2 leading-tight group-hover:text-indigo-600 transition-colors">How to Start JEE Preparation in Class 9 and 10</h2>
-              <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-3">Why an early start matters, what to focus on first and how to balance school studies with competitive-exam preparation.</p>
-              <a href="blog-detail.html" class="inline-flex items-center gap-1.5 text-indigo-600 text-sm font-semibold hover:gap-2 transition-all">
-                Read Article <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="blog-card dark:bg-slate-800 group flex flex-col md:flex-row" data-aos="fade-up">
-            <div class="blog-img h-48 md:h-auto md:w-2/5 flex-shrink-0 bg-indigo-600 relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=400&h=300&fit=crop&auto=format" alt="" loading="lazy"
-                class="absolute inset-0 w-full h-full object-cover" />
-            </div>
-            <div class="p-5 flex flex-col justify-center">
-              <div class="flex items-center gap-3 text-xs text-slate-400 mb-2">
-                <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> August 30, 2026</span>
-                <span>•</span>
-                <span class="text-green-600 font-medium">Parenting</span>
-              </div>
-              <h2 class="font-heading font-bold text-lg text-slate-800 dark:text-white mb-2 leading-tight group-hover:text-indigo-600 transition-colors">How Parents Can Help Children Beat Exam Stress</h2>
-              <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-3">Practical ways to support your child before and during exams — creating a calm routine without adding pressure.</p>
-              <a href="blog-detail.html" class="inline-flex items-center gap-1.5 text-indigo-600 text-sm font-semibold hover:gap-2 transition-all">
-                Read Article <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="blog-card dark:bg-slate-800 group flex flex-col md:flex-row" data-aos="fade-up">
-            <div class="blog-img h-48 md:h-auto md:w-2/5 flex-shrink-0 bg-indigo-600 relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=400&h=300&fit=crop&auto=format" alt="" loading="lazy"
-                class="absolute inset-0 w-full h-full object-cover" />
-            </div>
-            <div class="p-5 flex flex-col justify-center">
-              <div class="flex items-center gap-3 text-xs text-slate-400 mb-2">
-                <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> August 18, 2026</span>
-                <span>•</span>
-                <span class="text-blue-600 font-medium">NEET</span>
-              </div>
-              <h2 class="font-heading font-bold text-lg text-slate-800 dark:text-white mb-2 leading-tight group-hover:text-indigo-600 transition-colors">NEET Biology: How to Read NCERT Line by Line</h2>
-              <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-3">A step-by-step method to read, highlight and revise NCERT Biology so that no question catches you by surprise.</p>
-              <a href="blog-detail.html" class="inline-flex items-center gap-1.5 text-indigo-600 text-sm font-semibold hover:gap-2 transition-all">
-                Read Article <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="blog-card dark:bg-slate-800 group flex flex-col md:flex-row" data-aos="fade-up">
-            <div class="blog-img h-48 md:h-auto md:w-2/5 flex-shrink-0 bg-indigo-600 relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?w=400&h=300&fit=crop&auto=format" alt="" loading="lazy"
-                class="absolute inset-0 w-full h-full object-cover" />
-            </div>
-            <div class="p-5 flex flex-col justify-center">
-              <div class="flex items-center gap-3 text-xs text-slate-400 mb-2">
-                <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> August 5, 2026</span>
-                <span>•</span>
-                <span class="text-purple-600 font-medium">Online Learning</span>
-              </div>
-              <h2 class="font-heading font-bold text-lg text-slate-800 dark:text-white mb-2 leading-tight group-hover:text-indigo-600 transition-colors">Making the Most of Online Classes: 7 Tips for Students</h2>
-              <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-3">Set up your study space, stay focused on screen and turn live online classes into real learning.</p>
-              <a href="blog-detail.html" class="inline-flex items-center gap-1.5 text-indigo-600 text-sm font-semibold hover:gap-2 transition-all">
-                Read Article <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
-          </div>
-
-          <div class="blog-card dark:bg-slate-800 group flex flex-col md:flex-row" data-aos="fade-up">
-            <div class="blog-img h-48 md:h-auto md:w-2/5 flex-shrink-0 bg-indigo-600 relative overflow-hidden">
-              <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&h=300&fit=crop&auto=format" alt="" loading="lazy"
-                class="absolute inset-0 w-full h-full object-cover" />
-            </div>
-            <div class="p-5 flex flex-col justify-center">
-              <div class="flex items-center gap-3 text-xs text-slate-400 mb-2">
-                <span class="flex items-center gap-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> July 22, 2026</span>
-                <span>•</span>
-                <span class="text-indigo-600 font-medium">Study Tips</span>
-              </div>
-              <h2 class="font-heading font-bold text-lg text-slate-800 dark:text-white mb-2 leading-tight group-hover:text-indigo-600 transition-colors">The Pomodoro Method: Study Smarter in 25-Minute Sprints</h2>
-              <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-3">How short, focused study sessions with planned breaks can improve concentration and memory.</p>
-              <a href="blog-detail.html" class="inline-flex items-center gap-1.5 text-indigo-600 text-sm font-semibold hover:gap-2 transition-all">
-                Read Article <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-            </div>
-          </div>
-          <p id="no-posts" class="hidden text-center text-slate-500 py-10">No articles match your search.</p>
+          <h3 class="font-heading font-bold text-base text-slate-800 dark:text-white mb-2">1. Free Demo Class</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">Attend a free class to experience our teaching style.</p>
         </div>
-
-        <!-- Sidebar -->
-        <aside class="space-y-8">
-          <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 shadow-soft">
-            <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-5 flex items-center gap-2">
-              <i data-lucide="folder" class="w-5 h-5 text-indigo-600"></i> Categories
-            </h3>
-            <ul class="space-y-3">
-              <li><a href="#" class="flex items-center justify-between text-sm text-slate-600 dark:text-slate-300 hover:text-indigo-600 transition-colors"><span>Study Tips</span><span class="bg-indigo-50 dark:bg-slate-700 text-indigo-600 text-xs px-2 py-0.5 rounded-full">2</span></a></li>
-              <li><a href="#" class="flex items-center justify-between text-sm text-slate-600 dark:text-slate-300 hover:text-indigo-600 transition-colors"><span>JEE</span><span class="bg-indigo-50 dark:bg-slate-700 text-indigo-600 text-xs px-2 py-0.5 rounded-full">1</span></a></li>
-              <li><a href="#" class="flex items-center justify-between text-sm text-slate-600 dark:text-slate-300 hover:text-indigo-600 transition-colors"><span>NEET</span><span class="bg-indigo-50 dark:bg-slate-700 text-indigo-600 text-xs px-2 py-0.5 rounded-full">1</span></a></li>
-              <li><a href="#" class="flex items-center justify-between text-sm text-slate-600 dark:text-slate-300 hover:text-indigo-600 transition-colors"><span>Parenting</span><span class="bg-indigo-50 dark:bg-slate-700 text-indigo-600 text-xs px-2 py-0.5 rounded-full">1</span></a></li>
-              <li><a href="#" class="flex items-center justify-between text-sm text-slate-600 dark:text-slate-300 hover:text-indigo-600 transition-colors"><span>Online Learning</span><span class="bg-indigo-50 dark:bg-slate-700 text-indigo-600 text-xs px-2 py-0.5 rounded-full">1</span></a></li>
-            </ul>
+        <div class="text-center card-medical dark:bg-slate-800 relative" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-16 h-16 bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg dark:shadow-none relative z-10">
+            <i data-lucide="file-pen-line" class="w-7 h-7 text-white"></i>
           </div>
-
-          <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 shadow-soft">
-            <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-5 flex items-center gap-2">
-              <i data-lucide="flame" class="w-5 h-5 text-indigo-600"></i> Popular Posts
-            </h3>
-            <div class="space-y-4">
-              <a href="blog-detail.html" class="flex gap-3 group">
-                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=80&h=80&fit=crop&auto=format" alt="" loading="lazy" class="w-14 h-14 rounded-lg object-cover flex-shrink-0" />
-                <div class="min-w-0">
-                  <div class="text-sm font-semibold text-slate-800 dark:text-white leading-snug group-hover:text-indigo-600 transition-colors line-clamp-2">10 Smart Study Habits of Board Exam Toppers</div>
-                  <div class="text-xs text-slate-400 mt-1">September 24, 2026</div>
-                </div>
-              </a>
-              <a href="blog-detail.html" class="flex gap-3 group">
-                <img src="https://images.unsplash.com/photo-1453733190371-0a9bedd82893?w=80&h=80&fit=crop&auto=format" alt="" loading="lazy" class="w-14 h-14 rounded-lg object-cover flex-shrink-0" />
-                <div class="min-w-0">
-                  <div class="text-sm font-semibold text-slate-800 dark:text-white leading-snug group-hover:text-indigo-600 transition-colors line-clamp-2">How to Start JEE Preparation in Class 9 and 10</div>
-                  <div class="text-xs text-slate-400 mt-1">September 12, 2026</div>
-                </div>
-              </a>
-              <a href="blog-detail.html" class="flex gap-3 group">
-                <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=80&h=80&fit=crop&auto=format" alt="" loading="lazy" class="w-14 h-14 rounded-lg object-cover flex-shrink-0" />
-                <div class="min-w-0">
-                  <div class="text-sm font-semibold text-slate-800 dark:text-white leading-snug group-hover:text-indigo-600 transition-colors line-clamp-2">How Parents Can Help Children Beat Exam Stress</div>
-                  <div class="text-xs text-slate-400 mt-1">August 30, 2026</div>
-                </div>
-              </a>
-            </div>
+          <h3 class="font-heading font-bold text-base text-slate-800 dark:text-white mb-2">2. Diagnostic Test</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">A short test helps us place the student in the right batch.</p>
+        </div>
+        <div class="text-center card-medical dark:bg-slate-800 relative" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-16 h-16 bg-indigo-600 shadow-indigo-200 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg dark:shadow-none relative z-10">
+            <i data-lucide="presentation" class="w-7 h-7 text-white"></i>
           </div>
-
-          <div class="bg-gradient-to-br from-indigo-600 to-indigo-800 rounded-2xl p-6 text-white">
-            <h3 class="font-heading font-semibold text-lg mb-2 flex items-center gap-2">
-              <i data-lucide="mail" class="w-5 h-5"></i> Newsletter
-            </h3>
-            <p class="text-indigo-100 text-sm mb-4">Get new articles, study tips and exam alerts in your inbox.</p>
-            <form data-toast="Subscribed! Look out for study tips in your inbox." class="space-y-3">
-              <input type="email" placeholder="Your email address" required
-                class="w-full bg-white/10 border border-white/20 text-white placeholder-indigo-200 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-white transition-all" />
-              <button type="submit"
-                class="w-full bg-white text-indigo-700 font-semibold rounded-lg py-2.5 text-sm hover:bg-indigo-50 transition-colors flex items-center justify-center gap-2">
-                <i data-lucide="send" class="w-4 h-4"></i> Subscribe
-              </button>
-            </form>
+          <h3 class="font-heading font-bold text-base text-slate-800 dark:text-white mb-2">3. Regular Classes</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">Concept classes, notes and daily practice with expert teachers.</p>
+        </div>
+        <div class="text-center card-medical dark:bg-slate-800 relative" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-16 h-16 bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg dark:shadow-none relative z-10">
+            <i data-lucide="trending-up" class="w-7 h-7 text-white"></i>
           </div>
-
-          <div class="bg-white dark:bg-slate-800 rounded-2xl p-6 border border-gray-100 dark:border-slate-700 shadow-soft">
-            <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-5 flex items-center gap-2">
-              <i data-lucide="tag" class="w-5 h-5 text-indigo-600"></i> Tags
-            </h3>
-            <div class="flex flex-wrap gap-2">
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Board Exams</a>
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">JEE</a>
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">NEET</a>
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Revision</a>
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Time Management</a>
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Maths</a>
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Science</a>
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">Exam Stress</a>
-              <a href="#" class="bg-gray-100 dark:bg-slate-700 text-slate-600 dark:text-slate-400 text-xs px-3 py-1.5 rounded-full hover:bg-indigo-50 hover:text-indigo-600 transition-colors">CUET</a>
-            </div>
-          </div>
-        </aside>
+          <h3 class="font-heading font-bold text-base text-slate-800 dark:text-white mb-2">4. Tests &amp; Reviews</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">Regular tests, progress reports and parent–teacher meetings.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== CTA SECTION ===================== -->
-  <section class="section-padding" style="background: var(--hero-gradient);">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="zoom-in">
-      <div
-        class="inline-flex items-center gap-2 bg-amber-400/15 border border-amber-300/30 text-amber-300 text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wide mb-6">
-        <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
-        Start Today
-      </div>
-      <h2 class="font-heading font-bold text-2xl lg:text-4xl text-white mb-5 leading-tight">Turn Good Advice Into<br />Great Results</h2>
-      <p class="text-slate-300 text-lg mb-8 max-w-2xl mx-auto">Tips help — but expert teaching, regular practice and personal attention make the real difference. Try a free demo class today.</p>
-      <div class="flex flex-wrap gap-4 justify-center">
-        <a href="index.html#demo" class="btn-primary text-base py-3.5 px-8">
-          <i data-lucide="calendar-check" class="w-5 h-5"></i>
-          Book Free Demo Class
-        </a>
-        <a href="tel:+919129604415" class="btn-outline text-base py-3.5 px-8">
-          <i data-lucide="phone" class="w-5 h-5"></i>
-          Call +91 91296 04415
-        </a>
+  <!-- ===================== TEACHING APPROACH ===================== -->
+  <section class="section-padding bg-gradient-to-br from-slate-900 to-indigo-950 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right">
+          <span class="inline-flex items-center gap-2 bg-amber-400/15 text-amber-300 text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wide mb-4">
+            <i data-lucide="award" class="w-3.5 h-3.5"></i>
+            Expert Faculty
+          </span>
+          <h2 class="font-heading font-bold text-3xl lg:text-4xl mb-5">Our Teaching Approach</h2>
+          <p class="text-slate-300 leading-relaxed mb-4">
+            “Young learners learn best when they can see, question and practise ideas. We explain every concept step by step and keep classes interactive, so learning feels like discovery, not pressure.”
+          </p>
+          <div class="flex items-center gap-4 mt-6">
+            <img src="assets/logo.png" alt="" width="48" height="48" class="w-12 h-12 rounded-full" />
+            <div>
+              <div class="font-heading font-semibold text-base">Faculty Team, Young Minds Academy</div>
+              <div class="text-slate-400 text-sm">Subject specialists with years of classroom experience</div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-6" data-aos="fade-left">
+          <h3 class="font-heading font-semibold text-xl mb-4 flex items-center gap-2"><i data-lucide="layers" class="w-5 h-5 text-amber-400"></i> Choose Your Batch</h3>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="bg-white/5 border border-white/10 rounded-xl p-4">
+              <div class="font-heading font-semibold text-white mb-1">Regular Batch</div>
+              <p class="text-slate-400 text-sm">Complete syllabus coverage with regular classes, tests and doubt sessions.</p>
+            </div>
+            <div class="bg-amber-400/10 border border-amber-300/30 rounded-xl p-4">
+              <div class="font-heading font-semibold text-amber-300 mb-1">Platinum Batch</div>
+              <p class="text-slate-300 text-sm">Our premium batch. Ask our counsellor about its timings and extra support.</p>
+            </div>
+          </div>
+          <a href="tel:+919129604415" class="mt-5 inline-flex items-center gap-2 text-amber-300 text-sm font-semibold hover:gap-3 transition-all"><i data-lucide="phone" class="w-4 h-4"></i> Call +91 91296 04415 to compare batches</a>
+        </div>
       </div>
     </div>
   </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section-padding bg-white dark:bg-slate-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="circle-help" class="w-3.5 h-3.5"></i>
+          FAQ
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Course Questions</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">Answers to common questions about this program.</p>
+      </div>
+      <div class="space-y-0" data-aos="fade-up">
+        <div class="faq-item dark:border-slate-700">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            Which subjects are covered?
+            <i data-lucide="plus" class="w-5 h-5 text-indigo-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">All school subjects — Mathematics, Science, English and Social Science — along with mental ability and logical reasoning.</div>
+        </div>
+        <div class="faq-item dark:border-slate-700">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            Will it follow my child's school syllabus?
+            <i data-lucide="plus" class="w-5 h-5 text-indigo-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">Yes. Teaching follows the school syllabus and chapter order for CBSE, ICSE and State Board students.</div>
+        </div>
+        <div class="faq-item dark:border-slate-700">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            What is the difference between Regular and Platinum batches?
+            <i data-lucide="plus" class="w-5 h-5 text-indigo-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">Both cover the full syllabus. Our counsellor will explain the timings and extra support in each batch so you can choose what suits your child.</div>
+        </div>
+        <div class="faq-item dark:border-slate-700">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            Can my child join mid-session?
+            <i data-lucide="plus" class="w-5 h-5 text-indigo-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">Yes. After a short diagnostic test we help students catch up on chapters already covered.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ENQUIRY FORM ===================== -->
+  <section id="enquire" class="section-padding bg-slate-50 dark:bg-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="calendar-check" class="w-3.5 h-3.5"></i>
+          Get Started
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Book a Free Demo — Pre-Nurture (Class 5–8)</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">Fill in the form and our counsellor will call you within 24 hours.</p>
+      </div>
+      <div class="bg-gradient-to-br from-slate-900 to-indigo-950 rounded-2xl p-8 lg:p-12 shadow-2xl max-w-4xl mx-auto" data-aos="fade-up">
+        <form id="course-form" data-toast="Thanks! We'll call you within 24 hours to confirm your free demo class." class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Student Name *</label>
+            <input type="text" placeholder="Student's full name" class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all" required />
+          </div>
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Parent's Phone *</label>
+            <input type="tel" placeholder="10-digit mobile number" class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all" required />
+          </div>
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Email Address</label>
+            <input type="email" placeholder="parent@email.com" class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all" />
+          </div>
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Current Class *</label>
+            <select class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all" required><option>Class 5</option><option>Class 6</option><option>Class 7</option><option>Class 8</option><option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option><option>Class 12 Passed / Graduate</option></select>
+          </div>
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Course Interested In</label>
+            <select class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all"><option>Pre-Nurture (Class 5–8)</option><option>Pre-Foundation (Class 9–10)</option><option>Foundation 11–12 (PCB)</option><option>Foundation 11–12 (PCMB)</option><option>Foundation 11–12 (Commerce)</option><option>CUET Batches</option><option>Target &amp; Foundation (CLAT / IPMAT / CAT)</option></select>
+          </div>
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Preferred Mode</label>
+            <select class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all"><option>Classroom (Offline)</option><option>Live Online</option><option>Hybrid</option></select>
+          </div>
+          <div class="md:col-span-2 flex justify-center mt-2">
+            <button type="submit" class="btn-primary px-10 py-3.5 text-base">
+              <i data-lucide="calendar-check" class="w-5 h-5"></i>
+              Book My Free Demo Class
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA STRIP ===================== -->
+  <div class="bg-indigo-600 py-5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3 text-white">
+        <span class="w-3 h-3 bg-amber-400 rounded-full animate-pulse"></span>
+        <span class="font-heading font-semibold">Not sure which course is right for your child?</span>
+      </div>
+      <a href="tel:+919129604415" class="bg-white text-indigo-700 font-heading font-bold px-6 py-2.5 rounded-lg hover:bg-indigo-50 transition-all text-sm flex items-center gap-2">
+        <i data-lucide="phone" class="w-4 h-4"></i> Talk to a Counsellor
+      </a>
+    </div>
+  </div>
 
   <!-- ===================== FOOTER ===================== -->
 
