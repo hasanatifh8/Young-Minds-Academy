@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Only apply dark: utilities when a .dark class is set (the site has no dark toggle) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Custom CSS */
+
+@theme {
+  --color-primary: #4f46e5;
+  --color-secondary: #f59e0b;
+  --font-sans: "Inter", sans-serif;
+}
+
+/* Optional reusable classes */
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-lg font-semibold bg-indigo-600 text-white hover:bg-indigo-700 transition;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4;
+  }
+}

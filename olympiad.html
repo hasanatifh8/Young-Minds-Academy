@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Olympiads & Competitive Exams | Young Minds Academy</title>
+  <meta name="description" content="Challenge young minds with preparation for Maths and Science Olympiads, aptitude tests and scholarship exams for Classes 6–10." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="assets/aos.css" />
+  <script src="assets/aos.js"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="assets/output.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+
+</head>
+
+<body class="font-body">
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div id="preloader">
+    <div class="flex flex-col items-center gap-6">
+      <div class="w-16 h-16 bg-indigo-600 rounded-2xl flex items-center justify-center shadow-lg" style="animation: pulse-soft 1.4s ease-in-out infinite;">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg>
+      </div>
+
+      <!-- Pencil Line -->
+      <svg class="loader-line" viewBox="0 0 260 60">
+        <path class="loader-path"
+          d="M0,30 C20,10 40,10 60,30 S100,50 120,30 S160,10 180,30 S220,50 240,30 L260,30" />
+      </svg>
+
+      <div class="text-white font-heading text-xl font-semibold tracking-wide mt-2">Young Minds Academy</div>
+      <div class="text-slate-400 text-sm">Getting your classroom ready...</div>
+    </div>
+  </div>
+
+  <!-- ===================== TOP BAR ===================== -->
+  <div class="topbar py-2 text-white text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-2">
+        <div class="flex items-center gap-6">
+          <span class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></span>
+            <strong class="text-amber-400">Admissions Open:</strong>
+            <a href="tel:+919876543210" class="hover:text-amber-400 transition-colors">+91 98765 43210</a>
+          </span>
+          <span class="hidden md:flex items-center gap-2 text-slate-400">
+            <span>|</span>
+            <a href="mailto:info@youngmindsacademy.in" class="hover:text-white transition-colors">info@youngmindsacademy.in</a>
+          </span>
+        </div>
+        <div class="flex items-center gap-4 text-slate-400 text-xs">
+          <span>Mon–Sat: 7AM – 8:30PM</span>
+          <span>|</span>
+          <span>Sunday: Tests &amp; Doubt Sessions</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav id="navbar" class="sticky top-0 z-50 bg-transparent transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 lg:h-18">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-2.5">
+          <div class="w-9 h-9 bg-indigo-600 rounded-lg flex items-center justify-center shadow-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg>
+          </div>
+          <div>
+            <div class="font-heading font-800 text-lg leading-tight dark:text-white">Young Minds Academy</div>
+            <div class="text-xs text-slate-600 leading-none">Coaching for Classes 6–12</div>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex items-center gap-8">
+          <a href="index.html#home" class="nav-link text-sm">Home</a>
+          <a href="index.html#about" class="nav-link text-sm">About</a>
+          <a href="index.html#courses" class="nav-link text-sm">Courses</a>
+          <a href="index.html#subjects" class="nav-link text-sm">Subjects</a>
+          <a href="admissions.html" class="nav-link text-sm">Admissions</a>
+          <a href="blog.html" class="nav-link text-sm">Blog</a>
+          <a href="index.html#contact" class="nav-link text-sm">Contact</a>
+        </div>
+
+        <!-- Right Actions -->
+        <div class="flex items-center gap-3">
+          <div class="hidden lg:block">
+            <a href="index.html#demo" class="btn-primary text-sm py-2.5 px-5">
+              <i data-lucide="calendar-check" class="w-4 h-4"></i>
+              Book Free Demo
+            </a>
+          </div>
+          <!-- Mobile Menu Toggle -->
+          <button id="mobile-menu-btn" class="lg:hidden p-2 text-slate-600 hover:text-white" aria-label="Open menu">
+            <i data-lucide="menu" class="w-6 h-6" id="menu-open"></i>
+            <i data-lucide="x" class="w-6 h-6 hidden" id="menu-close"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-slate-900 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-1">
+        <a href="index.html#home" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Home</a>
+        <a href="index.html#about" class="nav-link text-slate-200 py-2.5 text-sm font-medium">About</a>
+        <a href="index.html#courses" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Courses</a>
+        <a href="index.html#subjects" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Subjects</a>
+        <a href="admissions.html" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Admissions</a>
+        <a href="blog.html" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Blog</a>
+        <a href="index.html#contact" class="nav-link text-slate-200 py-2.5 text-sm font-medium">Contact</a>
+        <a href="index.html#demo" class="btn-primary mt-3 w-full justify-center">Book Free Demo Class</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="relative min-h-[80vh] flex items-center" style="background: var(--hero-gradient);">
+    <div class="absolute top-20 right-16 w-72 h-72 bg-indigo-500/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-40 left-10 w-56 h-56 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="inline-flex items-center gap-2 bg-amber-400/15 text-amber-300 text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wide mb-4" data-aos="fade-up">
+            <i data-lucide="trophy" class="w-3.5 h-3.5"></i>
+            Olympiads &amp; Aptitude
+          </span>
+          <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-6" data-aos="fade-up" data-aos-delay="100">
+            Olympiads &amp;<br /><span class="text-amber-400">Competitive Exams</span>
+          </h1>
+          <p class="text-slate-300 text-lg leading-relaxed mb-8 max-w-lg" data-aos="fade-up" data-aos-delay="200">
+            Challenge young minds with preparation for Maths and Science Olympiads, aptitude tests and scholarship exams for Classes 6–10.
+          </p>
+          <div class="flex flex-wrap gap-4 mb-10" data-aos="fade-up" data-aos-delay="300">
+            <a href="#enquire" class="btn-primary text-base py-3.5 px-7">
+              <i data-lucide="calendar-check" class="w-5 h-5"></i> Book Free Demo
+            </a>
+            <a href="#overview" class="btn-outline text-base py-3.5 px-7">
+              <i data-lucide="compass" class="w-5 h-5"></i> Course Details
+            </a>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-xl" data-aos="fade-up" data-aos-delay="400">
+            <div class="bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+              <div class="flex items-center gap-2 text-slate-400 text-xs mb-1"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Duration</div>
+              <div class="font-heading font-semibold text-white text-sm">6 months</div>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+              <div class="flex items-center gap-2 text-slate-400 text-xs mb-1"><i data-lucide="users" class="w-3.5 h-3.5"></i> Batch Size</div>
+              <div class="font-heading font-semibold text-white text-sm">Max 15</div>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+              <div class="flex items-center gap-2 text-slate-400 text-xs mb-1"><i data-lucide="clock" class="w-3.5 h-3.5"></i> Schedule</div>
+              <div class="font-heading font-semibold text-white text-sm">Weekends</div>
+            </div>
+            <div class="bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+              <div class="flex items-center gap-2 text-slate-400 text-xs mb-1"><i data-lucide="monitor" class="w-3.5 h-3.5"></i> Mode</div>
+              <div class="font-heading font-semibold text-white text-sm">Classroom &amp; Online</div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden lg:flex justify-center" data-aos="fade-left" data-aos-delay="200">
+          <div class="relative">
+            <div class="w-80 h-80 xl:w-96 xl:h-96 bg-gradient-to-br from-indigo-600/20 to-slate-600/20 rounded-3xl border border-white/10 flex items-center justify-center overflow-hidden" style="animation: float 6s ease-in-out infinite;">
+              <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800&h=800&fit=crop&auto=format" alt="Olympiads & Competitive Exams" class="object-cover w-full h-full" />
+            </div>
+            <div class="absolute -top-6 -left-10 bg-white rounded-xl px-4 py-3 shadow-xl border border-gray-100">
+              <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-indigo-100 rounded-full flex items-center justify-center">
+                  <i data-lucide="users" class="w-4 h-4 text-indigo-600"></i>
+                </div>
+                <div>
+                  <div class="font-heading font-bold text-sm text-slate-800">Small Batches</div>
+                  <div class="text-xs text-slate-500">Personal attention</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OVERVIEW ===================== -->
+  <section id="overview" class="section-padding bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right">
+          <span class="section-tag mb-4">
+            <i data-lucide="info" class="w-3.5 h-3.5"></i>
+            Course Overview
+          </span>
+          <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mb-5">
+            Go Beyond the School Syllabus
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
+            Olympiads build higher-order thinking, logical reasoning and a love for problem-solving. Our weekend program prepares students for Maths and Science Olympiads and other aptitude-based exams, with challenging problems and mock tests.
+          </p>
+          <div class="space-y-3">
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-indigo-600"></i>
+              </div>
+              <span class="text-slate-700 dark:text-slate-300 text-sm">Preparation for IMO, NSO and other Olympiads</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-indigo-600"></i>
+              </div>
+              <span class="text-slate-700 dark:text-slate-300 text-sm">Logical reasoning and mental ability</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-indigo-600"></i>
+              </div>
+              <span class="text-slate-700 dark:text-slate-300 text-sm">Challenging, non-routine problems</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-6 h-6 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-indigo-600"></i>
+              </div>
+              <span class="text-slate-700 dark:text-slate-300 text-sm">Olympiad-pattern mock tests</span>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-left">
+          <div class="bg-gradient-to-br from-indigo-50 to-white dark:from-slate-800 dark:to-slate-700 rounded-2xl p-8 border border-indigo-100 dark:border-slate-600">
+            <h3 class="font-heading font-semibold text-xl text-slate-800 dark:text-white mb-4 flex items-center gap-2">
+              <i data-lucide="package-open" class="w-6 h-6 text-indigo-600"></i>
+              The Course Includes
+            </h3>
+            <ul class="space-y-3 text-slate-600 dark:text-slate-300 text-sm">
+              <li class="flex items-start gap-2">
+                <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0"></i>
+                <span>Level-wise Olympiad practice booklets</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0"></i>
+                <span>Weekend problem-solving workshops</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0"></i>
+                <span>Previous-years' Olympiad papers</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0"></i>
+                <span>Mock tests in Olympiad format</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-600 mt-0.5 flex-shrink-0"></i>
+                <span>Individual feedback after every test</span>
+              </li>
+            </ul>
+            <a href="#enquire" class="btn-primary mt-6 w-full justify-center text-sm py-3">
+              <i data-lucide="calendar-check" class="w-4 h-4"></i> Book a Free Demo Class
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BENEFITS ===================== -->
+  <section class="section-padding bg-slate-50 dark:bg-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="star" class="w-3.5 h-3.5"></i>
+          Benefits
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Why Students Choose This Course</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">A program designed around how students actually learn best.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="card-medical dark:bg-slate-700 text-center" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-14 h-14 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="brain" class="w-7 h-7 text-purple-600"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2">Higher-Order Thinking</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">Students learn to approach unfamiliar problems with logic and creativity.</p>
+        </div>
+        <div class="card-medical dark:bg-slate-700 text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-14 h-14 bg-amber-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="medal" class="w-7 h-7 text-amber-600"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2">Recognition</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">Olympiad certificates and medals strengthen a student's academic profile.</p>
+        </div>
+        <div class="card-medical dark:bg-slate-700 text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i data-lucide="rocket" class="w-7 h-7 text-blue-600"></i>
+          </div>
+          <h3 class="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2">Head Start</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">A strong base for JEE, NEET and other competitive exams later.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESS ===================== -->
+  <section class="section-padding bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="route" class="w-3.5 h-3.5"></i>
+          How to Join
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Getting Started Is Easy</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">Four simple steps from your first demo class to regular learning.</p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+        <div class="text-center card-medical dark:bg-slate-800 relative" data-aos="fade-up" data-aos-delay="0">
+          <div class="w-16 h-16 bg-indigo-600 shadow-indigo-200 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg dark:shadow-none relative z-10">
+            <i data-lucide="calendar-check" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-heading font-bold text-base text-slate-800 dark:text-white mb-2">1. Free Demo Class</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">Attend a free class to experience our teaching style.</p>
+        </div>
+        <div class="text-center card-medical dark:bg-slate-800 relative" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-16 h-16 bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg dark:shadow-none relative z-10">
+            <i data-lucide="file-pen-line" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-heading font-bold text-base text-slate-800 dark:text-white mb-2">2. Diagnostic Test</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">A short test helps us place the student in the right batch.</p>
+        </div>
+        <div class="text-center card-medical dark:bg-slate-800 relative" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-16 h-16 bg-indigo-600 shadow-indigo-200 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg dark:shadow-none relative z-10">
+            <i data-lucide="presentation" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-heading font-bold text-base text-slate-800 dark:text-white mb-2">3. Regular Classes</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">Concept classes, notes and daily practice with expert teachers.</p>
+        </div>
+        <div class="text-center card-medical dark:bg-slate-800 relative" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-16 h-16 bg-slate-700 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg dark:shadow-none relative z-10">
+            <i data-lucide="trending-up" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-heading font-bold text-base text-slate-800 dark:text-white mb-2">4. Tests &amp; Reviews</h3>
+          <p class="text-slate-500 dark:text-slate-400 text-sm">Regular tests, progress reports and parent–teacher meetings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TEACHING APPROACH ===================== -->
+  <section class="section-padding bg-gradient-to-br from-slate-900 to-indigo-950 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div data-aos="fade-right">
+          <span class="inline-flex items-center gap-2 bg-amber-400/15 text-amber-300 text-xs font-bold px-4 py-2 rounded-full uppercase tracking-wide mb-4">
+            <i data-lucide="award" class="w-3.5 h-3.5"></i>
+            Expert Faculty
+          </span>
+          <h2 class="font-heading font-bold text-3xl lg:text-4xl mb-5">Our Teaching Approach</h2>
+          <p class="text-slate-300 leading-relaxed mb-4">
+            “Olympiad problems reward curiosity. We teach students to break a difficult problem into small, logical steps — a skill that helps in every exam and beyond.”
+          </p>
+          <div class="flex items-center gap-4 mt-6">
+            <div class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg>
+            </div>
+            <div>
+              <div class="font-heading font-semibold text-base">Faculty Team, Young Minds Academy</div>
+              <div class="text-slate-400 text-sm">Subject specialists with years of classroom experience</div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-6" data-aos="fade-left">
+          <div class="text-amber-400 mb-3">★★★★★</div>
+          <blockquote class="italic text-slate-300 mb-4">“My daughter loves the weekend problem-solving sessions. She won a gold medal in her Maths Olympiad this year and is now aiming for the next level.”</blockquote>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center font-heading font-bold text-white text-xs">RS</div>
+            <div>
+              <div class="text-white text-sm font-medium">Mr. Sharma</div>
+              <div class="text-slate-400 text-xs">Parent of Class 8 Student</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section-padding bg-white dark:bg-slate-900">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="circle-help" class="w-3.5 h-3.5"></i>
+          FAQ
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Course Questions</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">Answers to common questions about this program.</p>
+      </div>
+      <div class="space-y-0" data-aos="fade-up">
+        <div class="faq-item dark:border-slate-700">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            Which classes can join?
+            <i data-lucide="plus" class="w-5 h-5 text-indigo-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">Students of Classes 6 to 10 can join. Batches are grouped by class level.</div>
+        </div>
+        <div class="faq-item dark:border-slate-700">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            Do you register students for the Olympiads?
+            <i data-lucide="plus" class="w-5 h-5 text-indigo-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">We guide parents on registration dates and processes. Registration is usually done through the student's school.</div>
+        </div>
+        <div class="faq-item dark:border-slate-700">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            Will this clash with regular school coaching?
+            <i data-lucide="plus" class="w-5 h-5 text-indigo-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">No. Olympiad classes are held on weekends, so students can attend alongside our Foundation or Board courses.</div>
+        </div>
+        <div class="faq-item dark:border-slate-700">
+          <div class="faq-question text-slate-800 dark:text-white" onclick="toggleFAQ(this)">
+            Which Olympiads do you cover?
+            <i data-lucide="plus" class="w-5 h-5 text-indigo-600 faq-icon flex-shrink-0"></i>
+          </div>
+          <div class="faq-answer">We focus on Mathematics and Science Olympiads, along with logical reasoning and aptitude tests.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ENQUIRY FORM ===================== -->
+  <section id="enquire" class="section-padding bg-slate-50 dark:bg-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12" data-aos="fade-up">
+        <span class="section-tag mb-4">
+          <i data-lucide="calendar-check" class="w-3.5 h-3.5"></i>
+          Get Started
+        </span>
+        <h2 class="font-heading font-bold text-3xl lg:text-4xl text-slate-900 dark:text-white mt-3">Book a Free Demo — Olympiads &amp; Competitive Exams</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-xl mx-auto">Fill in the form and our counsellor will call you within 24 hours.</p>
+      </div>
+      <div class="bg-gradient-to-br from-slate-900 to-indigo-950 rounded-2xl p-8 lg:p-12 shadow-2xl max-w-4xl mx-auto" data-aos="fade-up">
+        <form id="course-form" data-toast="Thanks! We'll call you within 24 hours to confirm your free demo class." class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Student Name *</label>
+            <input type="text" placeholder="Student's full name" class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all" required />
+          </div>
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Parent's Phone *</label>
+            <input type="tel" placeholder="+91 98765 43210" class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all" required />
+          </div>
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Email Address</label>
+            <input type="email" placeholder="parent@email.com" class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all" />
+          </div>
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Current Class *</label>
+            <select class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all" required><option>Class 6</option><option>Class 7</option><option>Class 8</option><option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option><option>Dropper / Repeater</option></select>
+          </div>
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Course Interested In</label>
+            <select class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all"><option>Olympiads &amp; Competitive Exams</option><option>Foundation (Class 6–8)</option><option>Class 9–10 Boards</option><option>Class 11–12 Science</option><option>JEE Main &amp; Advanced</option><option>NEET Preparation</option></select>
+          </div>
+          <div class="flex flex-col gap-1.5 ">
+            <label class="text-slate-300 text-sm font-medium">Preferred Mode</label>
+            <select class="bg-slate-700 border border-slate-600 text-white placeholder-slate-400 rounded-lg px-4 py-3 text-sm transition-all"><option>Classroom (Offline)</option><option>Live Online</option><option>Hybrid</option></select>
+          </div>
+          <div class="md:col-span-2 flex justify-center mt-2">
+            <button type="submit" class="btn-primary px-10 py-3.5 text-base">
+              <i data-lucide="calendar-check" class="w-5 h-5"></i>
+              Book My Free Demo Class
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA STRIP ===================== -->
+  <div class="bg-indigo-600 py-5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3 text-white">
+        <span class="w-3 h-3 bg-amber-400 rounded-full animate-pulse"></span>
+        <span class="font-heading font-semibold">Not sure which course is right for your child?</span>
+      </div>
+      <a href="tel:+919876543210" class="bg-white text-indigo-700 font-heading font-bold px-6 py-2.5 rounded-lg hover:bg-indigo-50 transition-all text-sm flex items-center gap-2">
+        <i data-lucide="phone" class="w-4 h-4"></i> Talk to a Counsellor
+      </a>
+    </div>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+
+  <!-- Footer Admissions Strip -->
+  <div style="background: linear-gradient(90deg, #312e81 0%, #4f46e5 50%, #312e81 100%);" class="py-5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-5">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-white/15 rounded-full flex items-center justify-center flex-shrink-0 animate-pulse">
+            <i data-lucide="graduation-cap" class="w-6 h-6 text-white"></i>
+          </div>
+          <div>
+            <div class="font-heading font-bold text-white text-lg">Admissions Open — Seats Are Limited</div>
+            <div class="text-indigo-200 text-sm">Talk to our counsellor and book a free demo class for your child.</div>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-3">
+          <a href="tel:+919876543210"
+            class="bg-white text-indigo-700 font-heading font-bold px-6 py-2.5 rounded-lg hover:bg-indigo-50 transition-all text-sm flex items-center gap-2 shadow-lg">
+            <i data-lucide="phone" class="w-4 h-4"></i> +91 98765 43210
+          </a>
+          <a href="https://wa.me/919876543210" target="_blank" rel="noopener"
+            class="bg-white/15 border border-white/30 text-white font-heading font-semibold px-6 py-2.5 rounded-lg hover:bg-white/25 transition-all text-sm flex items-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer  -->
+  <footer class="text-white overflow-hidden relative">
+    <!-- Decorative Background Elements -->
+    <div class="absolute top-0 left-0 w-[500px] h-[500px] rounded-full opacity-[0.05] pointer-events-none"
+      style="background: radial-gradient(circle, #4F46E5, transparent); transform: translate(-40%, -40%);"></div>
+    <div class="absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full opacity-[0.04] pointer-events-none"
+      style="background: radial-gradient(circle, #F59E0B, transparent); transform: translate(30%, 30%);"></div>
+
+    <!-- Decorative Wave Line -->
+    <div class="w-full overflow-hidden border-b border-white/5">
+      <svg viewBox="0 0 1440 40" preserveAspectRatio="none" class="w-full h-10" fill="none">
+        <path
+          d="M0,20 C60,4 120,4 180,20 S300,36 360,20 S480,4 540,20 S660,36 720,20 S840,4 900,20 S1020,36 1080,20 S1200,4 1260,20 S1380,36 1440,20"
+          stroke="#6366F1" stroke-width="1.5" stroke-opacity="0.5" />
+      </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-10">
+
+      <!-- TOP ROW: Brand + Newsletter -->
+      <div class="grid lg:grid-cols-2 gap-10 items-start mb-14 pb-14 border-b border-white/8">
+        <!-- Brand Block -->
+        <div>
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-900/50">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /><path d="M22 10v6" /><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg>
+            </div>
+            <div>
+              <div class="font-heading font-extrabold text-2xl text-white tracking-tight">Young Minds Academy</div>
+              <div class="text-xs text-amber-400 font-semibold uppercase tracking-widest">Learn · Grow · Achieve</div>
+            </div>
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6 max-w-md">
+            Young Minds Academy is a coaching institute for students of Classes 6–12, helping them master school subjects and
+            prepare for board exams, JEE, NEET and Olympiads through concept-first teaching, small batches and regular
+            practice.
+          </p>
+
+          <!-- Boards Row -->
+          <div class="flex flex-wrap gap-3 mb-6">
+            <div class="flex items-center gap-2 bg-white/6 border border-white/10 rounded-lg px-3 py-2">
+              <div class="w-7 h-7 bg-indigo-600/30 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="book-open" class="w-3.5 h-3.5 text-indigo-300"></i>
+              </div>
+              <span class="text-slate-300 text-xs font-medium">CBSE</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white/6 border border-white/10 rounded-lg px-3 py-2">
+              <div class="w-7 h-7 bg-blue-600/30 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="book-open" class="w-3.5 h-3.5 text-blue-400"></i>
+              </div>
+              <span class="text-slate-300 text-xs font-medium">ICSE</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white/6 border border-white/10 rounded-lg px-3 py-2">
+              <div class="w-7 h-7 bg-green-600/30 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="book-open" class="w-3.5 h-3.5 text-green-400"></i>
+              </div>
+              <span class="text-slate-300 text-xs font-medium">State Board</span>
+            </div>
+            <div class="flex items-center gap-2 bg-white/6 border border-white/10 rounded-lg px-3 py-2">
+              <div class="w-7 h-7 bg-amber-600/30 rounded-full flex items-center justify-center flex-shrink-0">
+                <i data-lucide="target" class="w-3.5 h-3.5 text-amber-400"></i>
+              </div>
+              <span class="text-slate-300 text-xs font-medium">JEE · NEET</span>
+            </div>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="flex items-center gap-3">
+            <span class="text-slate-500 text-xs mr-1">Follow Us:</span>
+            <a href="#"
+              class="w-9 h-9 bg-[#1877F2] rounded-full flex items-center justify-center hover:opacity-90 hover:scale-110 transition-all"
+              title="Facebook">
+              <svg width="15" height="15" fill="white" viewBox="0 0 24 24">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="#"
+              class="w-9 h-9 rounded-full flex items-center justify-center hover:opacity-90 hover:scale-110 transition-all"
+              style="background: linear-gradient(45deg, #f09433,#e6683c,#dc2743,#cc2366,#bc1888)" title="Instagram">
+              <svg width="15" height="15" fill="white" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <a href="#"
+              class="w-9 h-9 bg-[#FF0000] rounded-full flex items-center justify-center hover:opacity-90 hover:scale-110 transition-all"
+              title="YouTube">
+              <svg width="15" height="15" fill="white" viewBox="0 0 24 24">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg>
+            </a>
+            <a href="https://wa.me/919876543210" target="_blank" rel="noopener"
+              class="w-9 h-9 bg-[#25D366] rounded-full flex items-center justify-center hover:opacity-90 hover:scale-110 transition-all"
+              title="WhatsApp">
+              <i data-lucide="message-circle" class="w-4 h-4 text-white"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Newsletter Block -->
+        <div class="bg-gradient-to-br from-indigo-600/15 to-slate-800/40 border border-indigo-500/20 rounded-2xl p-7">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0">
+              <i data-lucide="mail-check" class="w-5 h-5 text-white"></i>
+            </div>
+            <div>
+              <h4 class="font-heading font-bold text-lg text-white">Study Tips Newsletter</h4>
+              <p class="text-slate-400 text-xs">For students &amp; parents</p>
+            </div>
+          </div>
+          <p class="text-slate-400 text-sm leading-relaxed mb-5">Get study tips, exam date alerts, scholarship test
+            announcements and academy updates delivered to your inbox.</p>
+          <form class="flex gap-2.5 mb-4" data-toast="Subscribed! Look out for study tips in your inbox.">
+            <input type="email" placeholder="Enter your email address" required
+              class="flex-1 min-w-0 bg-white/8 border border-white/15 text-white placeholder-slate-500 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-indigo-500 transition-all" />
+            <button type="submit"
+              class="bg-indigo-600 hover:bg-indigo-700 text-white font-heading font-semibold px-5 py-3 rounded-lg text-sm transition-all whitespace-nowrap flex items-center gap-1.5 flex-shrink-0">
+              <i data-lucide="send" class="w-4 h-4"></i> Subscribe
+            </button>
+          </form>
+          <p class="text-slate-500 text-xs flex items-center gap-1.5">
+            <i data-lucide="lock" class="w-3.5 h-3.5 text-slate-500"></i>
+            We never share your details. Unsubscribe anytime.
+          </p>
+        </div>
+      </div>
+
+      <!-- MAIN LINKS GRID: 5 columns -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-14 pb-14 border-b border-white/8">
+
+        <!-- Courses -->
+        <div>
+          <h4 class="font-heading font-semibold text-sm text-white mb-5 flex items-center gap-2">
+            <span class="w-1 h-4 bg-indigo-500 rounded-full inline-block"></span>
+            Our Courses
+          </h4>
+          <ul class="space-y-3">
+            <li><a href="foundation.html"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Foundation (Class 6–8)</a></li>
+            <li><a href="board-prep.html"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Class 9–10 Boards</a></li>
+            <li><a href="senior-secondary.html"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Class 11–12 Science</a></li>
+            <li><a href="jee.html"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>JEE Main &amp; Advanced</a></li>
+            <li><a href="neet.html"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>NEET Preparation</a></li>
+            <li><a href="olympiad.html"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Olympiads &amp; Competitive Exams</a></li>
+          </ul>
+        </div>
+
+        <!-- Students & Parents -->
+        <div>
+          <h4 class="font-heading font-semibold text-sm text-white mb-5 flex items-center gap-2">
+            <span class="w-1 h-4 bg-blue-500 rounded-full inline-block"></span>
+            Students &amp; Parents
+          </h4>
+          <ul class="space-y-3">
+            <li><a href="index.html#demo"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Book Free Demo</a></li>
+            <li><a href="admissions.html"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Admission Process</a></li>
+            <li><a href="admissions.html#scholarship"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Scholarship Test</a></li>
+            <li><a href="admissions.html#batches"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Batch Timings</a></li>
+            <li><a href="faq.html"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>FAQs</a></li>
+            <li><a href="blog.html"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Study Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="font-heading font-semibold text-sm text-white mb-5 flex items-center gap-2">
+            <span class="w-1 h-4 bg-green-500 rounded-full inline-block"></span>
+            Quick Links
+          </h4>
+          <ul class="space-y-3">
+            <li><a href="index.html#about"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>About Us</a></li>
+            <li><a href="index.html#subjects"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Subjects</a></li>
+            <li><a href="index.html#testimonials"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Testimonials</a></li>
+            <li><a href="index.html#contact"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Contact Us</a></li>
+            <li><a href="privacy.html"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Privacy Policy</a></li>
+            <li><a href="terms.html"
+                class="text-slate-400 text-sm hover:text-indigo-300 transition-colors flex items-center gap-1.5 group"><i
+                  data-lucide="chevron-right"
+                  class="w-3.5 h-3.5 opacity-0 group-hover:opacity-100 transition-opacity text-indigo-400 flex-shrink-0"></i>Terms &amp; Conditions</a></li>
+          </ul>
+        </div>
+
+        <!-- Class Timings -->
+        <div>
+          <h4 class="font-heading font-semibold text-sm text-white mb-5 flex items-center gap-2">
+            <span class="w-1 h-4 bg-amber-500 rounded-full inline-block"></span>
+            Class Timings
+          </h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex justify-between gap-4">
+              <span class="text-slate-400">Monday – Friday</span>
+              <span class="text-slate-300 font-medium text-xs">3PM – 8:30PM</span>
+            </li>
+            <li class="flex justify-between gap-4">
+              <span class="text-slate-400">Morning Batch</span>
+              <span class="text-slate-300 font-medium text-xs">7AM – 11AM</span>
+            </li>
+            <li class="flex justify-between gap-4">
+              <span class="text-slate-400">Saturday</span>
+              <span class="text-slate-300 font-medium text-xs">9AM – 7PM</span>
+            </li>
+            <li class="flex justify-between gap-4">
+              <span class="text-slate-400">Sunday</span>
+              <span class="text-amber-400 font-medium text-xs">Tests &amp; Doubts</span>
+            </li>
+          </ul>
+          <div class="mt-4 bg-green-600/15 border border-green-500/25 rounded-lg px-3 py-2 flex items-center gap-2">
+            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse flex-shrink-0"></span>
+            <span class="text-green-400 text-xs font-semibold">Admissions Open</span>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h4 class="font-heading font-semibold text-sm text-white mb-5 flex items-center gap-2">
+            <span class="w-1 h-4 bg-indigo-400 rounded-full inline-block"></span>
+            Contact Info
+          </h4>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-indigo-600/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5">
+                <i data-lucide="map-pin" class="w-4 h-4 text-indigo-300"></i>
+              </div>
+              <div>
+                <div class="text-slate-300 text-xs font-semibold mb-0.5">Our Centre</div>
+                <div class="text-slate-500 text-xs leading-relaxed">2nd Floor, Example Plaza, Main Road,<br />Your City, State – 000000</div>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-indigo-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-lucide="phone" class="w-4 h-4 text-indigo-300"></i>
+              </div>
+              <div>
+                <div class="text-slate-300 text-xs font-semibold mb-0.5">Phone / WhatsApp</div>
+                <a href="tel:+919876543210" class="text-slate-500 text-xs hover:text-indigo-300 transition-colors">+91 98765 43210</a>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="w-8 h-8 bg-indigo-600/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-lucide="mail" class="w-4 h-4 text-indigo-300"></i>
+              </div>
+              <div class="min-w-0">
+                <div class="text-slate-300 text-xs font-semibold mb-0.5">Email</div>
+                <a href="mailto:info@youngmindsacademy.in"
+                  class="text-slate-500 text-xs hover:text-indigo-300 transition-colors break-all">info@youngmindsacademy.in</a><br />
+                <a href="mailto:admissions@youngmindsacademy.in"
+                  class="text-slate-500 text-xs hover:text-indigo-300 transition-colors break-all">admissions@youngmindsacademy.in</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- GALLERY ROW -->
+      <div class="mb-14 pb-14 border-b border-white/8">
+        <div class="flex items-center justify-between mb-5">
+          <h4 class="font-heading font-semibold text-sm text-white flex items-center gap-2">
+            <span class="w-1 h-4 bg-indigo-500 rounded-full inline-block"></span>
+            Gallery — Life at Young Minds Academy
+          </h4>
+        </div>
+        <div class="grid grid-cols-3 sm:grid-cols-6 gap-2.5">
+          <div class="block rounded-xl overflow-hidden aspect-square group relative">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=200&h=200&fit=crop&auto=format"
+              alt="Classroom session" loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-indigo-600/0 group-hover:bg-indigo-600/30 transition-all duration-300"></div>
+          </div>
+          <div class="block rounded-xl overflow-hidden aspect-square group relative">
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=200&h=200&fit=crop&auto=format"
+              alt="Young learners in class" loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-indigo-600/0 group-hover:bg-indigo-600/30 transition-all duration-300"></div>
+          </div>
+          <div class="block rounded-xl overflow-hidden aspect-square group relative">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=200&h=200&fit=crop&auto=format"
+              alt="Lecture hall" loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-indigo-600/0 group-hover:bg-indigo-600/30 transition-all duration-300"></div>
+          </div>
+          <div class="block rounded-xl overflow-hidden aspect-square group relative">
+            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?w=200&h=200&fit=crop&auto=format"
+              alt="Group study" loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-indigo-600/0 group-hover:bg-indigo-600/30 transition-all duration-300"></div>
+          </div>
+          <div class="block rounded-xl overflow-hidden aspect-square group relative">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=200&h=200&fit=crop&auto=format"
+              alt="Students collaborating" loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-indigo-600/0 group-hover:bg-indigo-600/30 transition-all duration-300"></div>
+          </div>
+          <div class="block rounded-xl overflow-hidden aspect-square group relative">
+            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=200&h=200&fit=crop&auto=format"
+              alt="Our classroom" loading="lazy"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+            <div class="absolute inset-0 bg-indigo-600/0 group-hover:bg-indigo-600/30 transition-all duration-300"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM ROW: Highlights + Recent Posts -->
+      <div class="grid md:grid-cols-2 gap-8 mb-10 pb-10 border-b border-white/8">
+        <div>
+          <h4 class="font-heading font-semibold text-sm text-white mb-5 flex items-center gap-2">
+            <span class="w-1 h-4 bg-amber-400 rounded-full inline-block"></span>
+            The Young Minds Way
+          </h4>
+          <div class="grid grid-cols-2 gap-3">
+            <div
+              class="bg-white/5 border border-white/8 rounded-xl p-4 flex items-center gap-3 hover:bg-white/8 transition-colors">
+              <div class="w-10 h-10 bg-amber-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-lucide="users" class="w-5 h-5 text-amber-400"></i>
+              </div>
+              <div>
+                <div class="text-white text-xs font-semibold">Small Batches</div>
+                <div class="text-slate-400 text-xs">Max 20 students per batch</div>
+              </div>
+            </div>
+            <div
+              class="bg-white/5 border border-white/8 rounded-xl p-4 flex items-center gap-3 hover:bg-white/8 transition-colors">
+              <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-lucide="clipboard-check" class="w-5 h-5 text-blue-400"></i>
+              </div>
+              <div>
+                <div class="text-white text-xs font-semibold">Weekly Tests</div>
+                <div class="text-slate-400 text-xs">Chapter-wise, every Sunday</div>
+              </div>
+            </div>
+            <div
+              class="bg-white/5 border border-white/8 rounded-xl p-4 flex items-center gap-3 hover:bg-white/8 transition-colors">
+              <div class="w-10 h-10 bg-indigo-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-lucide="book-marked" class="w-5 h-5 text-indigo-400"></i>
+              </div>
+              <div>
+                <div class="text-white text-xs font-semibold">Printed Notes</div>
+                <div class="text-slate-400 text-xs">For every chapter &amp; subject</div>
+              </div>
+            </div>
+            <div
+              class="bg-white/5 border border-white/8 rounded-xl p-4 flex items-center gap-3 hover:bg-white/8 transition-colors">
+              <div class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                <i data-lucide="message-square" class="w-5 h-5 text-green-400"></i>
+              </div>
+              <div>
+                <div class="text-white text-xs font-semibold">Parent Reports</div>
+                <div class="text-slate-400 text-xs">Monthly PTMs &amp; progress cards</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-semibold text-sm text-white mb-5 flex items-center gap-2">
+            <span class="w-1 h-4 bg-blue-500 rounded-full inline-block"></span>
+            Recent Articles
+          </h4>
+          <div class="space-y-3">
+            <a href="blog-detail.html"
+              class="flex items-start gap-3 p-3 bg-white/4 border border-white/8 rounded-xl hover:bg-white/8 transition-all group">
+              <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=80&h=80&fit=crop&auto=format"
+                alt="" loading="lazy" class="w-14 h-14 rounded-lg object-cover flex-shrink-0" />
+              <div class="min-w-0">
+                <div
+                  class="text-white text-xs font-semibold leading-snug group-hover:text-indigo-300 transition-colors line-clamp-2">
+                  10 Smart Study Habits of Board Exam Toppers</div>
+                <div class="text-slate-400 text-xs mt-1 flex items-center gap-1.5">
+                  <i data-lucide="calendar" class="w-3 h-3"></i> September 24, 2026
+                </div>
+              </div>
+            </a>
+            <a href="blog-detail.html"
+              class="flex items-start gap-3 p-3 bg-white/4 border border-white/8 rounded-xl hover:bg-white/8 transition-all group">
+              <img src="https://images.unsplash.com/photo-1453733190371-0a9bedd82893?w=80&h=80&fit=crop&auto=format"
+                alt="" loading="lazy" class="w-14 h-14 rounded-lg object-cover flex-shrink-0" />
+              <div class="min-w-0">
+                <div
+                  class="text-white text-xs font-semibold leading-snug group-hover:text-indigo-300 transition-colors line-clamp-2">
+                  How to Start JEE Preparation in Class 9 and 10</div>
+                <div class="text-slate-400 text-xs mt-1 flex items-center gap-1.5">
+                  <i data-lucide="calendar" class="w-3 h-3"></i> September 12, 2026
+                </div>
+              </div>
+            </a>
+            <a href="blog-detail.html"
+              class="flex items-start gap-3 p-3 bg-white/4 border border-white/8 rounded-xl hover:bg-white/8 transition-all group">
+              <img src="https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=80&h=80&fit=crop&auto=format"
+                alt="" loading="lazy" class="w-14 h-14 rounded-lg object-cover flex-shrink-0" />
+              <div class="min-w-0">
+                <div
+                  class="text-white text-xs font-semibold leading-snug group-hover:text-indigo-300 transition-colors line-clamp-2">
+                  How Parents Can Help Children Beat Exam Stress</div>
+                <div class="text-slate-400 text-xs mt-1 flex items-center gap-1.5">
+                  <i data-lucide="calendar" class="w-3 h-3"></i> August 30, 2026
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM BAR -->
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-5">
+        <div class="text-center lg:text-left">
+          <p class="text-slate-400 text-sm">© 2026 <span class="text-slate-300 font-semibold">Young Minds Academy</span>. All
+            rights reserved. Template by <span class="text-slate-300 font-semibold"><a href="https://www.templatemonster.com/authors/k29solutions/" target="_blank">K29Solutions</a></span> &bull; Distributed by <span class="text-slate-300 font-semibold"><a href="https://www.themewagon.com/" target="_blank">ThemeWagon</a></span>.</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+          <a href="privacy.html" class="text-slate-400 text-xs hover:text-indigo-300 transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="text-slate-400 text-xs hover:text-indigo-300 transition-colors">Terms &amp; Conditions</a>
+          <a href="faq.html" class="text-slate-400 text-xs hover:text-indigo-300 transition-colors">FAQs</a>
+          <a href="admissions.html" class="text-slate-400 text-xs hover:text-indigo-300 transition-colors">Admissions</a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <span class="text-slate-400 text-xs">Boards:</span>
+          <div class="flex gap-1.5">
+            <span class="bg-white/8 border border-white/10 text-slate-400 text-xs px-2 py-1 rounded-md">CBSE</span>
+            <span class="bg-white/8 border border-white/10 text-slate-400 text-xs px-2 py-1 rounded-md">ICSE</span>
+            <span class="bg-white/8 border border-white/10 text-slate-400 text-xs px-2 py-1 rounded-md">State</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== MOBILE STICKY CTA ===================== -->
+  <div class="mobile-cta dark:bg-slate-900 dark:border-t dark:border-slate-700">
+    <a href="index.html#demo" class="btn-primary w-full justify-center py-3.5 text-base">
+      <i data-lucide="calendar-check" class="w-5 h-5"></i>
+      Book a Free Demo Class
+    </a>
+  </div>
+
+  <!-- ===================== SCROLL TO TOP ===================== -->
+  <button id="scroll-top" aria-label="Scroll to top">
+    <i data-lucide="arrow-up" class="w-5 h-5 text-white"></i>
+  </button>
+
+  <!-- Success Toast -->
+  <div id="toast"
+    class="fixed top-20 right-4 bg-green-600 text-white px-5 py-3 rounded-lg shadow-lg font-medium text-sm translate-x-full opacity-0 transition-all duration-300 z-[200] flex items-center gap-2 max-w-[calc(100vw-2rem)]">
+    <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0"></i>
+    <span id="toast-msg">Request submitted!</span>
+  </div>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
